@@ -116,3 +116,5 @@ dist
 .pnp.*
 
 test5.mkv
+beach/*
+test5/*
