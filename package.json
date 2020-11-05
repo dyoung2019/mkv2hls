@@ -12,5 +12,8 @@
   "devDependencies": {
     "axios": "^0.21.0",
     "ffmpeg": "0.0.4"
+  },
+  "dependencies": {
+    "yargs": "^16.1.0"
   }
 }
