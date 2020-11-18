@@ -1,20 +1,27 @@
 {
-  "name": "video-demo",
-  "version": "1.0.0",
-  "description": "",
+  "name": "mkv2hls",
+  "version": "1.0.1",
+  "description": "converts file1.mkv into hls video parts",
   "main": "index.js",
+  "bin": {
+    "mkv2hls": "index.js"
+  },
   "scripts": {
     "test": "jest"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "mkv",
+    "hls",
+    "ffmpeg"
+  ],
+  "author": "David Young",
   "license": "ISC",
   "devDependencies": {
     "axios": "^0.21.0",
-    "ffmpeg": "0.0.4",
     "jest": "^26.6.3"
   },
   "dependencies": {
+    "ffmpeg-cli": "^2.7.1",
     "yargs": "^16.1.0"
   }
 }

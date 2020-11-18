@@ -15,6 +15,11 @@ node mkv2hls.js [filename]
     - m3u8 playlist
     - video parts split in chunks 
     - subtitle parts split in chunks
+1. Write master playlist 
+  1. file tag
+  1. each all audio tracks
+  1. each subtitle track
+  1. each rendition (resolution)
 
 ### Playback
 1. Host js video player using video.js
@@ -55,3 +60,8 @@ node mkv2hls.js [filename]
 - MKVToolNix – Matroska tools for Linux/Unix and Windows 
   - https://mkvtoolnix.download/
 
+- Apple Streaming Examples
+  - https://developer.apple.com/streaming/examples/
+
+- HLS authoring rules for Apple Devices
+  - https://developer.apple.com/documentation/http_live_streaming/hls_authoring_specification_for_apple_devices

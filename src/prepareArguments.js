@@ -10,10 +10,11 @@ function prepareArguments(arguments) {
     .describe('i', '.mkv file for conversion')
     .demandOption(['i'])
     .alias('o', 'output')
+    .describe('o', 'output folder for conversion')
     .nargs('o', 1)
     .help('h')
     .alias('h', 'help')
-    .epilog('copyright 2019')
+    .epilog('copyright 2020')
     .argv;
 }
 

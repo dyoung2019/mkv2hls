@@ -1,0 +1,46 @@
+ffmpeg -i test5.mkv -hls_time 4 -hls_segment_filename test5/360p_%03d.ts -vn test5/360p.m3u8
+
+ffmpeg -hide_banner -y -i test5.mkv  -c:a aac -ar 48000 -c:v h264 -profile:v main -crf 20 -sc_threshold 0 -g 48 -keyint_min 48 -hls_time 4 -hls_playlist_type vod -vf scale=w=2:h=2:force_original_aspect_ratio=decrease -b:v 800k -maxrate 856k -bufsize 1200k -b:a 96k -hls_segment_filename test5/360p_%03d.ts -vn -an test5/360p.m3u8
+
+
+ffmpeg -hide_banner -y -i test5.mkv  -c:a aac -ar 48000 -c:v h264 -profile:v main -crf 20 -sc_threshold 0 -g 48 -keyint_min 48 -hls_time 4 -hls_playlist_type vod -vf scale=w=80:h=45:force_original_aspect_ratio=decrease -b:v 400k -maxrate 856k -bufsize 1200k -b:a 64k -hls_segment_filename test5/360_%1d.ts -vn -c:s webvtt -hls_vtt_options vtt_pattern="test5/360_s_%05.vtt" test5/360p%05d.m3u8
+
+
+ffmpeg -hide_banner -y -i test5.mkv  -c:a aac -ar 48000 -c:v h264 -profile:v main -crf 20 -sc_threshold 0 -g 48 -keyint_min 48 -hls_time 4 -hls_playlist_type vod -vf scale=w=80:h=45:force_original_aspect_ratio=decrease -b:v 400k -maxrate 856k -bufsize 1200k -b:a 64k -hls_segment_filename test5/360_%05d.ts -vn -c:s webvtt -hls_vtt_options vtt_pattern=test5/360_s_%05d.vtt test5/360p.m3u8
+
+
+ffmpeg -hide_banner -y -i test5.mkv  -c:a aac -ar 48000 -c:v h264 -profile:v main -crf 20 -sc_threshold 0 -g 48 -keyint_min 48 -hls_time 4 -hls_playlist_type vod -vf scale=w=80:h=45:force_original_aspect_ratio=decrease -b:v 400k -maxrate 856k -bufsize 1200k -b:a 64k -hls_segment_filename test5/360_%05d.ts -vn -sn test5/360p.m3u8 \
+-f segment -hls_playlist_type vod -segment_time 4 -segment_format webvtt -segment_list test5/subs_s.m3u8 test5/subs_%05d.vtt
+
+ffmpeg -hide_banner -y -i test5.mkv \
+  -hls_time 4 -hls_playlist_type vod -g 48 -keyint_min 48 -c:a aac -vn -sn test5/360p.m3u8 \
+  -hls_time 4 -g 48 -keyint_min 48 -c:s webvtt -f segment -write_empty_segments 1 -an -vn test5/subs_%05d.vtt
+
+
+ffmpeg -hide_banner -y -i test5.mkv \
+  -hls_time 4 -hls_playlist_type vod -g 48 -keyint_min 48 -sc_threshold 0 -c:a aac -vn test5/360p.m3u8 \
+  -f segment -an -map 0:s:1 -vn -segment_list test5/subs_s.m3u8 test5/X_subs_%03d.vtt
+
+ffmpeg -hide_banner -y -i test5.mkv \
+  -hls_time 4 -hls_playlist_type vod -g 48 -keyint_min 48 -sc_threshold 0 -c:a aac -vn test5/360p.m3u8 \
+  -f segment -hls_time 4 -an -map 0:s:1 -vn -segment_list test5/subs_s.m3u8 test5/X_subs_%03d.vtt
+
+ffmpeg -hide_banner -y -i test5.mkv \
+  -hls_time 4 -hls_playlist_type vod -c:a aac -vn -map 0:s:1 test5/360p.m3u8
+
+ffmpeg -hide_banner -y -i test5.mkv \
+  -map 0:s:0 -hls_time 4 -hls_playlist_type vod -g 48 -keyint_min 48 -c:v h264 -sc_threshold 0 -vn test5/360p.m3u8  
+
+ffmpeg -hide_banner -y -i test5.mkv \
+  -hls_time 4 -hls_playlist_type vod -g 48 -keyint_min 48 -sc_threshold 0 -disposition:s -default -disposition:s:2 default -c:a aac -vn test5/X_360p.m3u8 
+
+ffmpeg -hide_banner -y -i test5.mkv \
+  -map 0:s:0 -hls_time 4 -hls_playlist_type vod -g 48 -keyint_min 48 -c:v h264 -sc_threshold 0 -c:s -metadata:s:s:0 language=eng -metadata:s:s:1 language=ipk -vn test5/360p.m3u8  
+
+ffmpeg -i test5.mkv  -c copy -disposition:default:1 0 -disposition:default:6 default test5/outs.mkv
+
+ffmpeg -y -i test5.mkv  -c copy -disposition:s:0 -default -disposition:s:3 default  -map 0:s  out.mkv
+
+// ffmpeg -hide_banner -y -i test5.mkv  -c:a aac -ar 48000 -c:v h264 -profile:v main -crf 20 -sc_threshold 0 -g 48 -keyint_min 48 -hls_time 4 -hls_playlist_type vod -vf scale=w=640:h=360:force_original_aspect_ratio=decrease -b:v 800k -maxrate 856k -bufsize 1200k -b:a 96k -hls_segment_filename test5/360p_%03d.ts test5/360p.m3u8 -c:a aac -ar 48000 -c:v h264 -profile:v main -crf 20 -sc_threshold 0 -g 48 -keyint_min 48 -hls_time 4 -hls_playlist_type vod -vf scale=w=842:h=480:force_original_aspect_ratio=decrease -b:v 1400k -maxrate 1498k -bufsize 2100k -b:a 128k -hls_segment_filename test5/480p_%03d.ts test5/480p.m3u8 -c:a aac -ar 48000 -c:v h264 -profile:v main -crf 20 -sc_threshold 0 -g 48 -keyint_min 48 -hls_time 4 -hls_playlist_type vod -vf scale=w=1280:h=720:force_original_aspect_ratio=decrease -b:v 2800k -maxrate 2996k -bufsize 4200k -b:a 128k -hls_segment_filename test5/720p_%03d.ts test5/720p.m3u8 -c:a aac -ar 48000 -c:v h264 -profile:v main -crf 20 -sc_threshold 0 -g 48 -keyint_min 48 -hls_time 4 -hls_playlist_type vod -vf scale=w=1920:h=1080:force_original_aspect_ratio=decrease -b:v 5000k -maxrate 5350k -bufsize 7500k -b:a 192k -hls_segment_filename test5/1080p_%03d.ts test5/1080p.m3u8
+
+// ffmpeg -i test5.mkv -b:v:0 1000k -b:v:1 256k -b:a:0 64k -b:a:1 32k -map 0:v -map 0:a -map 0:v -map 0:a -f hls -var_stream_map "v:0,a:0 v:1,a:1"  -hls_segment_filename 'test4/file_%v_%03d.ts' test4/out_%v.m3u8
