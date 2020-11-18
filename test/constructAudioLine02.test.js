@@ -1,8 +1,6 @@
-const Module = require('./begin')
+const construct = require('../src/constructAudioLine')
 
 describe('construct simple m3u8 audio line #2', () => {
-  const construct = Module.constructAudioLine
-
   const data = {
     language: 'jpn',
     autoSelect: false,

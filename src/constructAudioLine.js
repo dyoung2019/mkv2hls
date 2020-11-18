@@ -1,12 +1,3 @@
-function begin() {
-  return "#EXTM3U"
-}
-
-function build() {
-  return [
-    begin()
-  ]
-}
 
 function constructAudioLine(params) {
   const uriClause = params.uri !== undefined
@@ -21,8 +12,4 @@ function constructAudioLine(params) {
          + uriClause       
 }
 
-module.exports = {
-  begin,
-  build,
-  constructAudioLine,
-}
+module.exports = constructAudioLine
