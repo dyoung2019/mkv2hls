@@ -1,28 +1,19 @@
 # mkv2hls - MKV Video to HLS conversion
 
-Batch operation to convert .mkv file to HLS video format
-
-Based on [peer 5](https://docs.peer5.com/guides/production-ready-hls-vod/) mkv to hls format video guide 
-
-## CLI application
+Batch operation to convert .mkv file to HLS video format (based on [Peer 5](https://docs.peer5.com/guides/production-ready-hls-vod/) guide)
 
 ````
-node mkv2hls.js [filename]
-````
-### Processes
-1. Analyzes mkv container file for tracks and subtitles 
-1. Converts video file to HLS via ffmpeg into:
-    - m3u8 playlist
-    - video parts split in chunks 
-    - subtitle parts split in chunks
-1. Write master playlist 
-  1. file tag
-  1. each all audio tracks
-  1. each subtitle track
-  1. each rendition (resolution)
+Usage: mkv2hls -i <video_file> [args]
 
-### Playback
-1. Host js video player using video.js
+Commands:
+  mkv2hls -i  converts file1.mkv into hls video parts
+
+Options:
+  -i, --input    .mkv file for conversion                             [required]
+  -o, --output   output folder for conversion
+  -h, --help     Show help                                             [boolean]
+  -v, --version  Show version number                                   [boolean]
+````
 
 ## Installation
 
@@ -44,6 +35,18 @@ node mkv2hls.js [filename]
 ### Post-install
 1. Downloads test5.mkv from [Matroska test files](https://github.com/Matroska-Org/matroska-test-files/) from [github](https://github.com/Matroska-Org/matroska-test-files/blob/master/test_files/test5.mkv)
 
+
+## Processes
+1. Analyzes mkv container file for tracks and subtitles 
+1. Converts video file to HLS via ffmpeg into:
+    - m3u8 playlist
+    - video parts split in chunks 
+    - subtitle parts split in chunks
+1. Write master playlist 
+    1. file tag
+    1. each all audio tracks
+    1. each subtitle track
+    1. each rendition (resolution)
 
 ## Links
 
