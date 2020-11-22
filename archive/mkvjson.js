@@ -1,4 +1,4 @@
-const inspectMkvFile = require('./src/inspectMkvFile')
+const inspectMkvFile = require('../src/inspectMkvFile')
 
 inspectMkvFile('test5.mkv')
   .then(data => {

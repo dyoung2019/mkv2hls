@@ -1,4 +1,4 @@
-const splitVideoBySubtitle = require('./src/splitVideoBySubtitle')
+const splitVideoBySubtitle = require('../src/splitVideoBySubtitle')
 
 const task = { 
   inputFile: 'test5.mkv', 
