@@ -40,13 +40,14 @@ Options:
 1. Analyzes mkv container file for tracks and subtitles 
 1. Converts video file to HLS via ffmpeg into:
     - m3u8 playlist
-    - video parts split in chunks 
+    - video parts split in chunks for each rendition
+    - split audio tracks in chunks
     - subtitle parts split in chunks
 1. Write master playlist 
     1. file tag
-    1. each all audio tracks
-    1. each subtitle track
-    1. each rendition (resolution)
+    1. for each all audio tracks
+    1. for each subtitle track
+    1. for each rendition 
 
 ## Links
 

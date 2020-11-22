@@ -119,3 +119,7 @@ test5.mkv
 beach/*
 test5/*
 *.mkv
+*/index.html
+*.ts
+*.m3u8
+*.vtt

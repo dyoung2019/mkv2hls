@@ -1,19 +1,4 @@
-function readAudioTrack(track) {
-  const trackName = track['track_name']
-  const isDefault = track['default_track'] || false
-  // Forced subtitles SHOULD always have AUTOSELECT=YES.
-  const isAutoSelected = track['forced_track'] || false
-  const audioLanguage = track['language']
-
-  return {
-    name: trackName,
-    language: audioLanguage,
-    default: isDefault,
-    autoSelect: isAutoSelected,
-  }
-}
-
-module.exports = readAudioTrack
+const readTrack = require('../src/readAudioTrack')
 
 // {
 //   "codec": "AAC",
@@ -35,3 +20,17 @@ module.exports = readAudioTrack
 //   },
 //   "type": "audio"
 // },
+
+describe('read audio track from JSON #3', () => {
+  const properties = {
+    "track_name": "Commentary",
+    "language": "eng",
+    "default_track": false,
+    "forced_track": false
+  }
+
+  const actual = readTrack(properties)
+  test('name is Commentary', () => {
+    expect(actual.name).toBe("Commentary");
+  })
+})

@@ -7,6 +7,7 @@ function constructAudioLine(params) {
   return `#EXT-X-MEDIA:TYPE=AUDIO,` +  
          `GROUP-ID="audio"` +
          `,LANGUAGE="${params.language}"` +
+         `,NAME="${params.name}"` +
          `,AUTOSELECT=${params.autoSelect ? 'YES' : 'NO' }` +
          `,DEFAULT=${params.default ? 'YES' : 'NO' }`  
          + uriClause       
