@@ -7,6 +7,7 @@ describe('extract video info #1', () => {
         type: "video",
         properties : {
           display_dimensions: '1024x576',
+          default_track: true,
           enabled_track: true,
         }
       }
