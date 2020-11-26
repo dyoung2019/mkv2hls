@@ -23,6 +23,7 @@
     "serve": "^11.3.2"
   },
   "dependencies": {
+    "del": "^6.0.0",
     "ffmpeg-cli": "^2.7.1",
     "yargs": "^16.1.0"
   }
