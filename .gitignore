@@ -123,3 +123,4 @@ test5/*
 *.ts
 *.m3u8
 *.vtt
+trash/*

@@ -96,39 +96,44 @@ function extractSub(params) {
 
 function pullSubs(params) {
   const {
-    prefix,
     inputFile,
-    outputFolder,
-    containerWidth,
-    containerHeight,
+    tempFolder,
     placeholder,
-    videoBitrate,
-    audioBitrate,
+    subPlaylistPath
   } = params
+
+  // postage stamp - smallest whole number 16 : 9
+  // divisible by 2
+  const CONTAINER_WIDTH = 32
+  const CONTAINER_HEIGHT = 18
+  const VIDEO_BITRATE = '25k'
+  const MAX_RATE = '35k'
+  const MAX_BUF_SIZE = '50k'
 
   const commands = [
     `-i ${inputFile}`,
-    `-vf scale=w=${containerWidth}:h=${containerHeight}:force_original_aspect_ratio=decrease`,
-    '-c:a aac',
-    '-ar 48000',
-    `-b:a ${audioBitrate}`,
+    `-vf scale=w=${CONTAINER_WIDTH}:h=${CONTAINER_HEIGHT}:force_original_aspect_ratio=decrease`,
+    // '-c:a aac',
+    // '-ar 48000',
+    // `-b:a ${audioBitrate}`,
     '-c:v h264',
+    `-b:v ${VIDEO_BITRATE}`,
+    `-maxrate ${MAX_RATE}`,
+    `-bufsize ${MAX_BUF_SIZE}`,    
     '-profile:v main',
     '-crf 20',
     '-g 48',
     '-keyint_min 48',
     '-sc_threshold 0',
-    `-b:v ${videoBitrate}`,
-    '-maxrate 2675k',
-    '-bufsize 3750k',
     '-hls_time 4',
+    `-hls_subtitle_path ${subPlaylistPath}`,
     '-hls_playlist_type vod',
-    `-hls_segment_filename ${outputFolder}/${prefix}_${placeholder}.ts`,
-    '-map 0:v',
-    '-map 0:a',
-    '-map 0:s:0',
-    // OUTPUT 
-    `${outputFolder}/${prefix}.m3u8`
+    `-hls_segment_filename ${tempFolder}/trash_${placeholder}_.ts`,
+    '-map 0:v', // video for sync
+    '-an', // no audio
+    '-map 0:s:0', // "DEFAULT" sub
+    // VIDEO OUTPUT 
+    `${tempFolder}/${placeholder}_.m3u8`
   ]
 
   // map all audio streams

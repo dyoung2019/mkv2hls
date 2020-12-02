@@ -1,6 +1,6 @@
 const construct = require('../src/constructAudioLine')
 
-describe('construct simple m3u8 audio line #1', () => {
+describe('construct simple subtitle line #1', () => {
 
   const data = {
     language: 'eng',
