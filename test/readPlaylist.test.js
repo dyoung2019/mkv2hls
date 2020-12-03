@@ -1,4 +1,4 @@
-const readPlaylist = require('../src/readPlaylistAsLines')
+const readPlaylist = require('../src/readPlaylistFile')
 
 describe('readPlaylist test cases', () => {
 

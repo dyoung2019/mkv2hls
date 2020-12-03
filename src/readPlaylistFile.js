@@ -24,10 +24,10 @@ async function processLineByLine(filePath) {
   return entries
 }
 
-async function readPlaylistAsLines(filePath) {
+async function readPlaylistFile(filePath) {
   return await processLineByLine(filePath)
 }
 
-module.exports = readPlaylistAsLines
+module.exports = readPlaylistFile
 
 
