@@ -4,7 +4,7 @@ function extractVideoAndSubs(params) {
   const {
     inputFile,
     tempFolder,
-    placeholder,
+    placeHolder,
     subPlaylistPath
   } = params
 
@@ -68,12 +68,12 @@ function extractVideoAndSubs(params) {
     `${flags.playlistPath} ${subPlaylistPath}`,
     `${flags.playlistType} ${PLAYLIST_TYPE}`,
     // VIDEO SEGMENTS TO BE DISCARDED
-    `${flags.segmentTemplate} ${tempFolder}/discard_${placeholder}_.ts`,
+    `${flags.segmentTemplate} ${tempFolder}/discard_${placeHolder}_.ts`,
     `${flags.mapStream} ${flags.defaultVideo}`, // video for sync
     `${flags.noAudio}`, // no audio
     `${flags.mapStream} ${flags.defaultSubtitle}`, // "DEFAULT" sub
     // VIDEO PLAYLIST TO BE DISCARDED YET ACTS AS TEMPLATE FOR VTT
-    `${tempFolder}/${placeholder}_.m3u8`
+    `${tempFolder}/${placeHolder}_.m3u8`
   ]
 
   // map all audio streams

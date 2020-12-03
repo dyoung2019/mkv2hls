@@ -5,7 +5,7 @@ function splitVideoBySubtitle(task) {
     inputFile: inputFileName, 
     outputFile: outputFileName, 
     audioTrack,
-    selectedIndex: selectedSubtitleIndex
+    subtitleIndex
   } = task
 
   // const inputFileName = 'test5.mkv'
@@ -36,7 +36,7 @@ function splitVideoBySubtitle(task) {
   // const setSelectedSubFlag = `${flags.dispositionStream}:${selectedSubtitleIndex}`
   // FIRST SUB IN VIDEO of input 0
   const audioMapping =  `${flags.audioMask}:${selectedAudioTrack}`
-  const subTitleMapping =  `${flags.subMask}:${selectedSubtitleIndex}`
+  const subTitleMapping =  `${flags.subMask}:${subtitleIndex}`
 
   const commands = [
     flags.hideBanner,

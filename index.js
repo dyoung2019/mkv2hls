@@ -1,57 +1,26 @@
 #!/usr/bin/env node 
 
-const splitFileName = require('./src/splitFileName')
 const createFolderIfNeeded = require('./src/createFolderIfNeeded')
 const prepareArguments = require('./src/prepareArguments')
-const resolveFolderPath = require('./src/resolveFolderPath')
-const getOutputFolder = require('./src/getOutputFolder')
+const extractOutputFolder = require('./src/extractOutputFolder')
 const inspectMkvFile = require('./src/inspectMkvFile')
 const videoCommand = require('./src/videoCommand')
+const extractVideoInfo = require('./src/extractVideoInfo')
+const extractSubtitleInfo = require('./src/extractSubtitlesInfo')
+const extractAudioTracks = require('./src/extractAudioTracks')
 
 const argv = prepareArguments(process.argv.slice(2))
 
-const inputFile = argv.input
+const inputFile = argv.input  
 
-// console.log(argv)
-// console.log(inputFile)  
-
-const { shortName } = splitFileName(inputFile)
-const localFolder = resolveFolderPath('.', shortName)
-const outputFolder = getOutputFolder(argv, localFolder)
-
+// prepare output folder
+const outputFolder = extractOutputFolder(inputFile, argv)
 createFolderIfNeeded(outputFolder)
 
-const renditions = [
-  {
-    prefix: '360p',
-    containerWidth: 640,
-    containerHeight: 360,
-    videoBitrate: '800k',
-    audioBitrate: '96k'
-  },
-  {
-    prefix: '480p',
-    containerWidth: 842,
-    containerHeight: 480,
-    videoBitrate: '1400k',
-    audioBitrate: '128k'
-  },  
-  {
-    prefix: '720p',
-    containerWidth: 1280,
-    containerHeight: 720,
-    videoBitrate: '2800k',
-    audioBitrate: '128k'
-  },
-  {
-    prefix: '1080p',
-    containerWidth: 1920,
-    containerHeight: 1080,
-    videoBitrate: '5000k',
-    audioBitrate: '192k'
-  }
-]
+const renditions = require('./src/renditions')
+const buildPlaylist = require('./src/buildPlaylist')
 
+// for each rendition
 const currentRendition = renditions[2]
 
 const params = {
@@ -66,17 +35,40 @@ const params = {
   subtitleIndex: 1,
 }
 
+let videoInfo = null
+//  Analyzes mkv container file for tracks and subtitles
 inspectMkvFile(inputFile)
-  // .then(data => {
+  // set video info
+  .then(data => {
+    // console.log(data)
+    videoInfo = {
+      info: extractVideoInfo(data),
+      subtitles: extractSubtitleInfo(data),
+      tracks: extractAudioTracks(data)
+    }
+    console.log(data.tracks)
+    // console.log('audio', videoInfo.tracks)
+    // console.log('subs', videoInfo.subtitles)
+  })
+  // extract extra audio tracks
+  // .then(() => {
   //   // console.log(data)
   //   return videoCommand.run(params)
   // })
+  // // extract extra audio tracks
+  // .then(()) => {
+  //   // console.log(data)
+  //   return videoCommand.run(params)
+  // })
+  // .then(() => {
+  //   console.log('on to subs')
+  //   return videoCommand.extract(params)
+  // })
+  // Write master playlist
   .then(() => {
-    console.log('on to subs')
-    return videoCommand.extract(params)
-  })
-  .then(() => {
-    console.log('all subs')
+    console.log('writing master playlist')
+    const entries = buildPlaylist(videoInfo)
+    console.log(entries)
   })
   .catch(e => {
     console.error('ERROR', e);

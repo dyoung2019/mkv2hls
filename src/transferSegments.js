@@ -12,7 +12,15 @@ function transferSegments(changes, srcFolder, dstFolder, callback) {
     const videoPath = getVideoPath(srcFolder, original)
     const subPath = getVideoPath(dstFolder, updated)
     
-    return callback(videoPath, subPath)
+    return new Promise((resolve, reject) => {
+      try {
+        callback(videoPath, subPath)
+        resolve()
+      }
+      catch(error) {
+        reject(erro)
+      }
+    })
   })
   return Promise.all(transfers)
 }
