@@ -17,6 +17,12 @@ Options:
 
 ## Installation
 
+### Requirements 
+  - ffmpeg
+      - ffmpeg-cli
+  - yargs
+  - mkvtoolnix
+
 ### Pre-install
 
 1. Install [ffmpeg](https://ffmpeg.org/) with aac audio support (e.g. [homebrew-ffmpeg](https://github.com/homebrew-ffmpeg/homebrew-ffmpeg) via [homebrew](https://formulae.brew.sh/) )
@@ -28,7 +34,7 @@ Options:
     ````
 
 1. Install [MkvtoolNix](https://mkvtoolnix.download/) for mkvmerge CLI application
-    ````
+    ````sh
     brew install mkvtoolnix
     ````
 

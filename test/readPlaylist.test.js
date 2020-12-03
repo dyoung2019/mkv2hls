@@ -1,6 +1,6 @@
 const readPlaylist = require('../src/readPlaylistAsLines')
 
-describe('readPlaylist', () => {
+describe('readPlaylist test cases', () => {
 
   const filePath = 'misc/eng.m3u8'
   test('output is an array', async () => {

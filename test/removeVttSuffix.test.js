@@ -1,6 +1,6 @@
 const removeVttSuffix = require("../src/removeVttSuffix")
 
-describe('', () => {
+describe('remove vtt subtitle test cases', () => {
   test('remove vtt subtitle #1', () => {
     const actual = removeVttSuffix('0001_1.vtt')
     expect(actual).toBe('0001.vtt')

@@ -5,7 +5,7 @@ const transferSegments = require('../src/transferSegments')
 jest.mock('fs')
 jest.unmock('path')
 
-describe('transferSegments', () => {
+describe('transferSegments test cases', () => {
 
   const callback = jest.fn()
 

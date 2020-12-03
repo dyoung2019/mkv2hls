@@ -1,6 +1,6 @@
 const isVttSubtitle = require('../src/isVttSubtitle')
 
-describe('isVttSubtitle tests', () => {
+describe('isVttSubtitle test cases', () => {
   test('.vtt ', () => {
     const actual = isVttSubtitle('subtitle.vtt')
     expect(actual).toBe(true)

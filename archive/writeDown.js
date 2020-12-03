@@ -1,4 +1,4 @@
-const writeLinesToFile = require('./src/writeLinesToFile')
+const writeLinesToFile = require('../src/writeLinesToFile')
 
 const lines = [
   'a',

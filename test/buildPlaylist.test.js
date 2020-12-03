@@ -1,6 +1,6 @@
 const build = require('../src/buildPlaylist');
 
-describe('buildPlaylist tests', () => {
+describe('buildPlaylist test cases', () => {
 
   test('build m3u8 playlist as list', () => {
     expect(build()).toEqual(expect.any(Array))
