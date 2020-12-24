@@ -1,0 +1,1498 @@
+[
+ {
+   "Locale": "Afrikaans",
+   "Language code": "af",
+   "LCID string": "af",
+   "LCID Decimal": "1078",
+   "LCID Hexadecimal": "436",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "Albanian",
+   "Language code": "sq",
+   "LCID string": "sq",
+   "LCID Decimal": "1052",
+   "LCID Hexadecimal": "",
+   "Codepage": 1250
+ },
+ {
+   "Locale": "Amharic",
+   "Language code": "am",
+   "LCID string": "am",
+   "LCID Decimal": "1118",
+   "LCID Hexadecimal": "",
+   "Codepage": null
+ },
+ {
+   "Locale": "Arabic - Algeria",
+   "Language code": "ar",
+   "LCID string": "ar-dz",
+   "LCID Decimal": "5121",
+   "LCID Hexadecimal": "1401",
+   "Codepage": 1256
+ },
+ {
+   "Locale": "Arabic - Bahrain",
+   "Language code": "ar",
+   "LCID string": "ar-bh",
+   "LCID Decimal": "15361",
+   "LCID Hexadecimal": "",
+   "Codepage": 1256
+ },
+ {
+   "Locale": "Arabic - Egypt",
+   "Language code": "ar",
+   "LCID string": "ar-eg",
+   "LCID Decimal": "3073",
+   "LCID Hexadecimal": "",
+   "Codepage": 1256
+ },
+ {
+   "Locale": "Arabic - Iraq",
+   "Language code": "ar",
+   "LCID string": "ar-iq",
+   "LCID Decimal": "2049",
+   "LCID Hexadecimal": "801",
+   "Codepage": 1256
+ },
+ {
+   "Locale": "Arabic - Jordan",
+   "Language code": "ar",
+   "LCID string": "ar-jo",
+   "LCID Decimal": "11265",
+   "LCID Hexadecimal": "",
+   "Codepage": 1256
+ },
+ {
+   "Locale": "Arabic - Kuwait",
+   "Language code": "ar",
+   "LCID string": "ar-kw",
+   "LCID Decimal": "13313",
+   "LCID Hexadecimal": "3401",
+   "Codepage": 1256
+ },
+ {
+   "Locale": "Arabic - Lebanon",
+   "Language code": "ar",
+   "LCID string": "ar-lb",
+   "LCID Decimal": "12289",
+   "LCID Hexadecimal": "3001",
+   "Codepage": 1256
+ },
+ {
+   "Locale": "Arabic - Libya",
+   "Language code": "ar",
+   "LCID string": "ar-ly",
+   "LCID Decimal": "4097",
+   "LCID Hexadecimal": "1001",
+   "Codepage": 1256
+ },
+ {
+   "Locale": "Arabic - Morocco",
+   "Language code": "ar",
+   "LCID string": "ar-ma",
+   "LCID Decimal": "6145",
+   "LCID Hexadecimal": "1801",
+   "Codepage": 1256
+ },
+ {
+   "Locale": "Arabic - Oman",
+   "Language code": "ar",
+   "LCID string": "ar-om",
+   "LCID Decimal": "8193",
+   "LCID Hexadecimal": "2001",
+   "Codepage": 1256
+ },
+ {
+   "Locale": "Arabic - Qatar",
+   "Language code": "ar",
+   "LCID string": "ar-qa",
+   "LCID Decimal": "16385",
+   "LCID Hexadecimal": "4001",
+   "Codepage": 1256
+ },
+ {
+   "Locale": "Arabic - Saudi Arabia",
+   "Language code": "ar",
+   "LCID string": "ar-sa",
+   "LCID Decimal": "1025",
+   "LCID Hexadecimal": "401",
+   "Codepage": 1256
+ },
+ {
+   "Locale": "Arabic - Syria",
+   "Language code": "ar",
+   "LCID string": "ar-sy",
+   "LCID Decimal": "10241",
+   "LCID Hexadecimal": "2801",
+   "Codepage": 1256
+ },
+ {
+   "Locale": "Arabic - Tunisia",
+   "Language code": "ar",
+   "LCID string": "ar-tn",
+   "LCID Decimal": "7169",
+   "LCID Hexadecimal": "",
+   "Codepage": 1256
+ },
+ {
+   "Locale": "Arabic - United Arab Emirates",
+   "Language code": "ar",
+   "LCID string": "ar-ae",
+   "LCID Decimal": "14337",
+   "LCID Hexadecimal": "3801",
+   "Codepage": 1256
+ },
+ {
+   "Locale": "Arabic - Yemen",
+   "Language code": "ar",
+   "LCID string": "ar-ye",
+   "LCID Decimal": "9217",
+   "LCID Hexadecimal": "2401",
+   "Codepage": 1256
+ },
+ {
+   "Locale": "Armenian",
+   "Language code": "hy",
+   "LCID string": "hy",
+   "LCID Decimal": "1067",
+   "LCID Hexadecimal": "",
+   "Codepage": null
+ },
+ {
+   "Locale": "Assamese",
+   "Language code": "as",
+   "LCID string": "as",
+   "LCID Decimal": "1101",
+   "LCID Hexadecimal": "",
+   "Codepage": null
+ },
+ {
+   "Locale": "Azeri - Cyrillic",
+   "Language code": "az",
+   "LCID string": "az-az",
+   "LCID Decimal": "2092",
+   "LCID Hexadecimal": "",
+   "Codepage": 1251
+ },
+ {
+   "Locale": "Azeri - Latin",
+   "Language code": "az",
+   "LCID string": "az-az",
+   "LCID Decimal": "1068",
+   "LCID Hexadecimal": "",
+   "Codepage": 1254
+ },
+ {
+   "Locale": "Basque",
+   "Language code": "eu",
+   "LCID string": "eu",
+   "LCID Decimal": "1069",
+   "LCID Hexadecimal": "",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "Belarusian",
+   "Language code": "be",
+   "LCID string": "be",
+   "LCID Decimal": "1059",
+   "LCID Hexadecimal": "423",
+   "Codepage": 1251
+ },
+ {
+   "Locale": "Bengali - Bangladesh",
+   "Language code": "bn",
+   "LCID string": "bn",
+   "LCID Decimal": "2117",
+   "LCID Hexadecimal": "845",
+   "Codepage": null
+ },
+ {
+   "Locale": "Bengali - India",
+   "Language code": "bn",
+   "LCID string": "bn",
+   "LCID Decimal": "1093",
+   "LCID Hexadecimal": "445",
+   "Codepage": null
+ },
+ {
+   "Locale": "Bosnian",
+   "Language code": "bs",
+   "LCID string": "bs",
+   "LCID Decimal": "5146",
+   "LCID Hexadecimal": "",
+   "Codepage": null
+ },
+ {
+   "Locale": "Bulgarian",
+   "Language code": "bg",
+   "LCID string": "bg",
+   "LCID Decimal": "1026",
+   "LCID Hexadecimal": "402",
+   "Codepage": 1251
+ },
+ {
+   "Locale": "Burmese",
+   "Language code": "my",
+   "LCID string": "my",
+   "LCID Decimal": "1109",
+   "LCID Hexadecimal": "455",
+   "Codepage": null
+ },
+ {
+   "Locale": "Catalan",
+   "Language code": "ca",
+   "LCID string": "ca",
+   "LCID Decimal": "1027",
+   "LCID Hexadecimal": "403",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "Chinese - China",
+   "Language code": "zh",
+   "LCID string": "zh-cn",
+   "LCID Decimal": "2052",
+   "LCID Hexadecimal": "804",
+   "Codepage": null
+ },
+ {
+   "Locale": "Chinese - Hong Kong SAR",
+   "Language code": "zh",
+   "LCID string": "zh-hk",
+   "LCID Decimal": "3076",
+   "LCID Hexadecimal": "",
+   "Codepage": null
+ },
+ {
+   "Locale": "Chinese - Macau SAR",
+   "Language code": "zh",
+   "LCID string": "zh-mo",
+   "LCID Decimal": "5124",
+   "LCID Hexadecimal": "1404",
+   "Codepage": null
+ },
+ {
+   "Locale": "Chinese - Singapore",
+   "Language code": "zh",
+   "LCID string": "zh-sg",
+   "LCID Decimal": "4100",
+   "LCID Hexadecimal": "1004",
+   "Codepage": null
+ },
+ {
+   "Locale": "Chinese - Taiwan",
+   "Language code": "zh",
+   "LCID string": "zh-tw",
+   "LCID Decimal": "1028",
+   "LCID Hexadecimal": "404",
+   "Codepage": null
+ },
+ {
+   "Locale": "Croatian",
+   "Language code": "hr",
+   "LCID string": "hr",
+   "LCID Decimal": "1050",
+   "LCID Hexadecimal": "",
+   "Codepage": 1250
+ },
+ {
+   "Locale": "Czech",
+   "Language code": "cs",
+   "LCID string": "cs",
+   "LCID Decimal": "1029",
+   "LCID Hexadecimal": "405",
+   "Codepage": 1250
+ },
+ {
+   "Locale": "Danish",
+   "Language code": "da",
+   "LCID string": "da",
+   "LCID Decimal": "1030",
+   "LCID Hexadecimal": "406",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "Divehi - Maldivian",
+   "Language code": "dv",
+   "LCID string": "dv",
+   "LCID Decimal": "dv",
+   "LCID Hexadecimal": "dv",
+   "Codepage": null
+ },
+ {
+   "Locale": "Dutch - Belgium",
+   "Language code": "nl",
+   "LCID string": "nl-be",
+   "LCID Decimal": "2067",
+   "LCID Hexadecimal": "813",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "Dutch - Netherlands",
+   "Language code": "nl",
+   "LCID string": "nl-nl",
+   "LCID Decimal": "1043",
+   "LCID Hexadecimal": "413",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "Edo",
+   "Language code": "",
+   "LCID string": "",
+   "LCID Decimal": "1126",
+   "LCID Hexadecimal": "466",
+   "Codepage": null
+ },
+ {
+   "Locale": "English - Australia",
+   "Language code": "en",
+   "LCID string": "en-au",
+   "LCID Decimal": "3081",
+   "LCID Hexadecimal": "",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "English - Belize",
+   "Language code": "en",
+   "LCID string": "en-bz",
+   "LCID Decimal": "10249",
+   "LCID Hexadecimal": "2809",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "English - Canada",
+   "Language code": "en",
+   "LCID string": "en-ca",
+   "LCID Decimal": "4105",
+   "LCID Hexadecimal": "1009",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "English - Caribbean",
+   "Language code": "en",
+   "LCID string": "en-cb",
+   "LCID Decimal": "9225",
+   "LCID Hexadecimal": "2409",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "English - Great Britain",
+   "Language code": "en",
+   "LCID string": "en-gb",
+   "LCID Decimal": "2057",
+   "LCID Hexadecimal": "809",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "English - India",
+   "Language code": "en",
+   "LCID string": "en-in",
+   "LCID Decimal": "16393",
+   "LCID Hexadecimal": "4009",
+   "Codepage": null
+ },
+ {
+   "Locale": "English - Ireland",
+   "Language code": "en",
+   "LCID string": "en-ie",
+   "LCID Decimal": "6153",
+   "LCID Hexadecimal": "1809",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "English - Jamaica",
+   "Language code": "en",
+   "LCID string": "en-jm",
+   "LCID Decimal": "8201",
+   "LCID Hexadecimal": "2009",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "English - New Zealand",
+   "Language code": "en",
+   "LCID string": "en-nz",
+   "LCID Decimal": "5129",
+   "LCID Hexadecimal": "1409",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "English - Philippines",
+   "Language code": "en",
+   "LCID string": "en-ph",
+   "LCID Decimal": "13321",
+   "LCID Hexadecimal": "3409",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "English - Southern Africa",
+   "Language code": "en",
+   "LCID string": "en-za",
+   "LCID Decimal": "7177",
+   "LCID Hexadecimal": "",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "English - Trinidad",
+   "Language code": "en",
+   "LCID string": "en-tt",
+   "LCID Decimal": "11273",
+   "LCID Hexadecimal": "",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "English - United States",
+   "Language code": "en",
+   "LCID string": "en-us",
+   "LCID Decimal": "1033",
+   "LCID Hexadecimal": "409",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "English - Zimbabwe",
+   "Language code": "en",
+   "LCID string": "",
+   "LCID Decimal": "12297",
+   "LCID Hexadecimal": "3009",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "Estonian",
+   "Language code": "et",
+   "LCID string": "et",
+   "LCID Decimal": "1061",
+   "LCID Hexadecimal": "425",
+   "Codepage": 1257
+ },
+ {
+   "Locale": "FYRO Macedonia",
+   "Language code": "mk",
+   "LCID string": "mk",
+   "LCID Decimal": "1071",
+   "LCID Hexadecimal": "",
+   "Codepage": 1251
+ },
+ {
+   "Locale": "Faroese",
+   "Language code": "fo",
+   "LCID string": "fo",
+   "LCID Decimal": "1080",
+   "LCID Hexadecimal": "438",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "Farsi - Persian",
+   "Language code": "fa",
+   "LCID string": "fa",
+   "LCID Decimal": "1065",
+   "LCID Hexadecimal": "429",
+   "Codepage": 1256
+ },
+ {
+   "Locale": "Filipino",
+   "Language code": "",
+   "LCID string": "",
+   "LCID Decimal": "1124",
+   "LCID Hexadecimal": "464",
+   "Codepage": null
+ },
+ {
+   "Locale": "Finnish",
+   "Language code": "fi",
+   "LCID string": "fi",
+   "LCID Decimal": "1035",
+   "LCID Hexadecimal": "",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "French - Belgium",
+   "Language code": "fr",
+   "LCID string": "fr-be",
+   "LCID Decimal": "2060",
+   "LCID Hexadecimal": "",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "French - Cameroon",
+   "Language code": "fr",
+   "LCID string": "",
+   "LCID Decimal": "11276",
+   "LCID Hexadecimal": "",
+   "Codepage": null
+ },
+ {
+   "Locale": "French - Canada",
+   "Language code": "fr",
+   "LCID string": "fr-ca",
+   "LCID Decimal": "3084",
+   "LCID Hexadecimal": "",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "French - Congo",
+   "Language code": "fr",
+   "LCID string": "",
+   "LCID Decimal": "9228",
+   "LCID Hexadecimal": "",
+   "Codepage": null
+ },
+ {
+   "Locale": "French - Cote d'Ivoire",
+   "Language code": "fr",
+   "LCID string": "",
+   "LCID Decimal": "12300",
+   "LCID Hexadecimal": "",
+   "Codepage": null
+ },
+ {
+   "Locale": "French - France",
+   "Language code": "fr",
+   "LCID string": "fr-fr",
+   "LCID Decimal": "1036",
+   "LCID Hexadecimal": "",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "French - Luxembourg",
+   "Language code": "fr",
+   "LCID string": "fr-lu",
+   "LCID Decimal": "5132",
+   "LCID Hexadecimal": "",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "French - Mali",
+   "Language code": "fr",
+   "LCID string": "",
+   "LCID Decimal": "13324",
+   "LCID Hexadecimal": "",
+   "Codepage": null
+ },
+ {
+   "Locale": "French - Monaco",
+   "Language code": "fr",
+   "LCID string": "",
+   "LCID Decimal": "6156",
+   "LCID Hexadecimal": "",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "French - Morocco",
+   "Language code": "fr",
+   "LCID string": "",
+   "LCID Decimal": "14348",
+   "LCID Hexadecimal": "",
+   "Codepage": null
+ },
+ {
+   "Locale": "French - Senegal",
+   "Language code": "fr",
+   "LCID string": "",
+   "LCID Decimal": "10252",
+   "LCID Hexadecimal": "",
+   "Codepage": null
+ },
+ {
+   "Locale": "French - Switzerland",
+   "Language code": "fr",
+   "LCID string": "fr-ch",
+   "LCID Decimal": "4108",
+   "LCID Hexadecimal": "",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "French - West Indies",
+   "Language code": "fr",
+   "LCID string": "",
+   "LCID Decimal": "7180",
+   "LCID Hexadecimal": "",
+   "Codepage": null
+ },
+ {
+   "Locale": "Frisian - Netherlands",
+   "Language code": "",
+   "LCID string": "",
+   "LCID Decimal": "1122",
+   "LCID Hexadecimal": "462",
+   "Codepage": null
+ },
+ {
+   "Locale": "Gaelic - Ireland",
+   "Language code": "gd",
+   "LCID string": "gd-ie",
+   "LCID Decimal": "2108",
+   "LCID Hexadecimal": "",
+   "Codepage": null
+ },
+ {
+   "Locale": "Gaelic - Scotland",
+   "Language code": "gd",
+   "LCID string": "gd",
+   "LCID Decimal": "1084",
+   "LCID Hexadecimal": "",
+   "Codepage": null
+ },
+ {
+   "Locale": "Galician",
+   "Language code": "gl",
+   "LCID string": "",
+   "LCID Decimal": "1110",
+   "LCID Hexadecimal": "456",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "Georgian",
+   "Language code": "ka",
+   "LCID string": "",
+   "LCID Decimal": "1079",
+   "LCID Hexadecimal": "437",
+   "Codepage": null
+ },
+ {
+   "Locale": "German - Austria",
+   "Language code": "de",
+   "LCID string": "de-at",
+   "LCID Decimal": "3079",
+   "LCID Hexadecimal": "",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "German - Germany",
+   "Language code": "de",
+   "LCID string": "de-de",
+   "LCID Decimal": "1031",
+   "LCID Hexadecimal": "407",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "German - Liechtenstein",
+   "Language code": "de",
+   "LCID string": "de-li",
+   "LCID Decimal": "5127",
+   "LCID Hexadecimal": "1407",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "German - Luxembourg",
+   "Language code": "de",
+   "LCID string": "de-lu",
+   "LCID Decimal": "4103",
+   "LCID Hexadecimal": "1007",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "German - Switzerland",
+   "Language code": "de",
+   "LCID string": "de-ch",
+   "LCID Decimal": "2055",
+   "LCID Hexadecimal": "807",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "Greek",
+   "Language code": "el",
+   "LCID string": "el",
+   "LCID Decimal": "1032",
+   "LCID Hexadecimal": "408",
+   "Codepage": 1253
+ },
+ {
+   "Locale": "Guarani - Paraguay",
+   "Language code": "gn",
+   "LCID string": "gn",
+   "LCID Decimal": "1140",
+   "LCID Hexadecimal": "474",
+   "Codepage": null
+ },
+ {
+   "Locale": "Gujarati",
+   "Language code": "gu",
+   "LCID string": "gu",
+   "LCID Decimal": "1095",
+   "LCID Hexadecimal": "447",
+   "Codepage": null
+ },
+ {
+   "Locale": "HID (Human Interface Device)",
+   "Language code": "",
+   "LCID string": "",
+   "LCID Decimal": "1279",
+   "LCID Hexadecimal": "",
+   "Codepage": null
+ },
+ {
+   "Locale": "Hebrew",
+   "Language code": "he",
+   "LCID string": "he",
+   "LCID Decimal": "1037",
+   "LCID Hexadecimal": "",
+   "Codepage": 1255
+ },
+ {
+   "Locale": "Hindi",
+   "Language code": "hi",
+   "LCID string": "hi",
+   "LCID Decimal": "1081",
+   "LCID Hexadecimal": "439",
+   "Codepage": null
+ },
+ {
+   "Locale": "Hungarian",
+   "Language code": "hu",
+   "LCID string": "hu",
+   "LCID Decimal": "1038",
+   "LCID Hexadecimal": "",
+   "Codepage": 1250
+ },
+ {
+   "Locale": "Icelandic",
+   "Language code": "is",
+   "LCID string": "is",
+   "LCID Decimal": "1039",
+   "LCID Hexadecimal": "",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "Igbo - Nigeria",
+   "Language code": "",
+   "LCID string": "",
+   "LCID Decimal": "1136",
+   "LCID Hexadecimal": "470",
+   "Codepage": null
+ },
+ {
+   "Locale": "Indonesian",
+   "Language code": "id",
+   "LCID string": "id",
+   "LCID Decimal": "1057",
+   "LCID Hexadecimal": "421",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "Italian - Italy",
+   "Language code": "it",
+   "LCID string": "it-it",
+   "LCID Decimal": "1040",
+   "LCID Hexadecimal": "410",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "Italian - Switzerland",
+   "Language code": "it",
+   "LCID string": "it-ch",
+   "LCID Decimal": "2064",
+   "LCID Hexadecimal": "810",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "Japanese",
+   "Language code": "ja",
+   "LCID string": "ja",
+   "LCID Decimal": "1041",
+   "LCID Hexadecimal": "411",
+   "Codepage": null
+ },
+ {
+   "Locale": "Kannada",
+   "Language code": "kn",
+   "LCID string": "kn",
+   "LCID Decimal": "1099",
+   "LCID Hexadecimal": "",
+   "Codepage": null
+ },
+ {
+   "Locale": "Kashmiri",
+   "Language code": "ks",
+   "LCID string": "ks",
+   "LCID Decimal": "1120",
+   "LCID Hexadecimal": "460",
+   "Codepage": null
+ },
+ {
+   "Locale": "Kazakh",
+   "Language code": "kk",
+   "LCID string": "kk",
+   "LCID Decimal": "1087",
+   "LCID Hexadecimal": "",
+   "Codepage": 1251
+ },
+ {
+   "Locale": "Khmer",
+   "Language code": "km",
+   "LCID string": "km",
+   "LCID Decimal": "1107",
+   "LCID Hexadecimal": "453",
+   "Codepage": null
+ },
+ {
+   "Locale": "Konkani",
+   "Language code": "",
+   "LCID string": "",
+   "LCID Decimal": "1111",
+   "LCID Hexadecimal": "457",
+   "Codepage": null
+ },
+ {
+   "Locale": "Korean",
+   "Language code": "ko",
+   "LCID string": "ko",
+   "LCID Decimal": "1042",
+   "LCID Hexadecimal": "412",
+   "Codepage": null
+ },
+ {
+   "Locale": "Kyrgyz - Cyrillic",
+   "Language code": "",
+   "LCID string": "",
+   "LCID Decimal": "1088",
+   "LCID Hexadecimal": "440",
+   "Codepage": 1251
+ },
+ {
+   "Locale": "Lao",
+   "Language code": "lo",
+   "LCID string": "lo",
+   "LCID Decimal": "1108",
+   "LCID Hexadecimal": "454",
+   "Codepage": null
+ },
+ {
+   "Locale": "Latin",
+   "Language code": "la",
+   "LCID string": "la",
+   "LCID Decimal": "1142",
+   "LCID Hexadecimal": "476",
+   "Codepage": null
+ },
+ {
+   "Locale": "Latvian",
+   "Language code": "lv",
+   "LCID string": "lv",
+   "LCID Decimal": "1062",
+   "LCID Hexadecimal": "426",
+   "Codepage": 1257
+ },
+ {
+   "Locale": "Lithuanian",
+   "Language code": "lt",
+   "LCID string": "lt",
+   "LCID Decimal": "1063",
+   "LCID Hexadecimal": "427",
+   "Codepage": 1257
+ },
+ {
+   "Locale": "Malay - Brunei",
+   "Language code": "ms",
+   "LCID string": "ms-bn",
+   "LCID Decimal": "2110",
+   "LCID Hexadecimal": "",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "Malay - Malaysia",
+   "Language code": "ms",
+   "LCID string": "ms-my",
+   "LCID Decimal": "1086",
+   "LCID Hexadecimal": "",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "Malayalam",
+   "Language code": "ml",
+   "LCID string": "ml",
+   "LCID Decimal": "1100",
+   "LCID Hexadecimal": "",
+   "Codepage": null
+ },
+ {
+   "Locale": "Maltese",
+   "Language code": "mt",
+   "LCID string": "mt",
+   "LCID Decimal": "1082",
+   "LCID Hexadecimal": "",
+   "Codepage": null
+ },
+ {
+   "Locale": "Manipuri",
+   "Language code": "",
+   "LCID string": "",
+   "LCID Decimal": "1112",
+   "LCID Hexadecimal": "458",
+   "Codepage": null
+ },
+ {
+   "Locale": "Maori",
+   "Language code": "mi",
+   "LCID string": "mi",
+   "LCID Decimal": "1153",
+   "LCID Hexadecimal": "481",
+   "Codepage": null
+ },
+ {
+   "Locale": "Marathi",
+   "Language code": "mr",
+   "LCID string": "mr",
+   "LCID Decimal": "1102",
+   "LCID Hexadecimal": "",
+   "Codepage": null
+ },
+ {
+   "Locale": "Mongolian",
+   "Language code": "mn",
+   "LCID string": "mn",
+   "LCID Decimal": "2128",
+   "LCID Hexadecimal": "850",
+   "Codepage": null
+ },
+ {
+   "Locale": "Mongolian",
+   "Language code": "mn",
+   "LCID string": "mn",
+   "LCID Decimal": "1104",
+   "LCID Hexadecimal": "450",
+   "Codepage": 1251
+ },
+ {
+   "Locale": "Nepali",
+   "Language code": "ne",
+   "LCID string": "ne",
+   "LCID Decimal": "1121",
+   "LCID Hexadecimal": "461",
+   "Codepage": null
+ },
+ {
+   "Locale": "Norwegian - Bokml",
+   "Language code": "nb",
+   "LCID string": "no-no",
+   "LCID Decimal": "1044",
+   "LCID Hexadecimal": "414",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "Norwegian - Nynorsk",
+   "Language code": "nn",
+   "LCID string": "no-no",
+   "LCID Decimal": "2068",
+   "LCID Hexadecimal": "814",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "Oriya",
+   "Language code": "or",
+   "LCID string": "or",
+   "LCID Decimal": "1096",
+   "LCID Hexadecimal": "448",
+   "Codepage": null
+ },
+ {
+   "Locale": "Polish",
+   "Language code": "pl",
+   "LCID string": "pl",
+   "LCID Decimal": "1045",
+   "LCID Hexadecimal": "415",
+   "Codepage": 1250
+ },
+ {
+   "Locale": "Portuguese - Brazil",
+   "Language code": "pt",
+   "LCID string": "pt-br",
+   "LCID Decimal": "1046",
+   "LCID Hexadecimal": "416",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "Portuguese - Portugal",
+   "Language code": "pt",
+   "LCID string": "pt-pt",
+   "LCID Decimal": "2070",
+   "LCID Hexadecimal": "816",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "Punjabi",
+   "Language code": "pa",
+   "LCID string": "pa",
+   "LCID Decimal": "1094",
+   "LCID Hexadecimal": "446",
+   "Codepage": null
+ },
+ {
+   "Locale": "Raeto-Romance",
+   "Language code": "rm",
+   "LCID string": "rm",
+   "LCID Decimal": "1047",
+   "LCID Hexadecimal": "417",
+   "Codepage": null
+ },
+ {
+   "Locale": "Romanian - Moldova",
+   "Language code": "ro",
+   "LCID string": "ro-mo",
+   "LCID Decimal": "2072",
+   "LCID Hexadecimal": "818",
+   "Codepage": null
+ },
+ {
+   "Locale": "Romanian - Romania",
+   "Language code": "ro",
+   "LCID string": "ro",
+   "LCID Decimal": "1048",
+   "LCID Hexadecimal": "418",
+   "Codepage": 1250
+ },
+ {
+   "Locale": "Russian",
+   "Language code": "ru",
+   "LCID string": "ru",
+   "LCID Decimal": "1049",
+   "LCID Hexadecimal": "419",
+   "Codepage": 1251
+ },
+ {
+   "Locale": "Russian - Moldova",
+   "Language code": "ru",
+   "LCID string": "ru-mo",
+   "LCID Decimal": "2073",
+   "LCID Hexadecimal": "819",
+   "Codepage": null
+ },
+ {
+   "Locale": "Sami Lappish",
+   "Language code": "",
+   "LCID string": "",
+   "LCID Decimal": "1083",
+   "LCID Hexadecimal": "",
+   "Codepage": null
+ },
+ {
+   "Locale": "Sanskrit",
+   "Language code": "sa",
+   "LCID string": "sa",
+   "LCID Decimal": "1103",
+   "LCID Hexadecimal": "",
+   "Codepage": null
+ },
+ {
+   "Locale": "Serbian - Cyrillic",
+   "Language code": "sr",
+   "LCID string": "sr-sp",
+   "LCID Decimal": "3098",
+   "LCID Hexadecimal": "",
+   "Codepage": 1251
+ },
+ {
+   "Locale": "Serbian - Latin",
+   "Language code": "sr",
+   "LCID string": "sr-sp",
+   "LCID Decimal": "2074",
+   "LCID Hexadecimal": "",
+   "Codepage": 1250
+ },
+ {
+   "Locale": "Sesotho (Sutu)",
+   "Language code": "",
+   "LCID string": "",
+   "LCID Decimal": "1072",
+   "LCID Hexadecimal": "430",
+   "Codepage": null
+ },
+ {
+   "Locale": "Setsuana",
+   "Language code": "tn",
+   "LCID string": "tn",
+   "LCID Decimal": "1074",
+   "LCID Hexadecimal": "432",
+   "Codepage": null
+ },
+ {
+   "Locale": "Sindhi",
+   "Language code": "sd",
+   "LCID string": "sd",
+   "LCID Decimal": "1113",
+   "LCID Hexadecimal": "459",
+   "Codepage": null
+ },
+ {
+   "Locale": "Sinhala",
+   "Language code": "si",
+   "LCID string": "si",
+   "LCID Decimal": "si",
+   "LCID Hexadecimal": "1115",
+   "Codepage": null
+ },
+ {
+   "Locale": "Slovak",
+   "Language code": "sk",
+   "LCID string": "sk",
+   "LCID Decimal": "1051",
+   "LCID Hexadecimal": "",
+   "Codepage": 1250
+ },
+ {
+   "Locale": "Slovenian",
+   "Language code": "sl",
+   "LCID string": "sl",
+   "LCID Decimal": "1060",
+   "LCID Hexadecimal": "424",
+   "Codepage": 1250
+ },
+ {
+   "Locale": "Somali",
+   "Language code": "so",
+   "LCID string": "so",
+   "LCID Decimal": "1143",
+   "LCID Hexadecimal": "477",
+   "Codepage": null
+ },
+ {
+   "Locale": "Sorbian",
+   "Language code": "sb",
+   "LCID string": "sb",
+   "LCID Decimal": "1070",
+   "LCID Hexadecimal": "",
+   "Codepage": null
+ },
+ {
+   "Locale": "Spanish - Argentina",
+   "Language code": "es",
+   "LCID string": "es-ar",
+   "LCID Decimal": "11274",
+   "LCID Hexadecimal": "",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "Spanish - Bolivia",
+   "Language code": "es",
+   "LCID string": "es-bo",
+   "LCID Decimal": "16394",
+   "LCID Hexadecimal": "",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "Spanish - Chile",
+   "Language code": "es",
+   "LCID string": "es-cl",
+   "LCID Decimal": "13322",
+   "LCID Hexadecimal": "",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "Spanish - Colombia",
+   "Language code": "es",
+   "LCID string": "es-co",
+   "LCID Decimal": "9226",
+   "LCID Hexadecimal": "",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "Spanish - Costa Rica",
+   "Language code": "es",
+   "LCID string": "es-cr",
+   "LCID Decimal": "5130",
+   "LCID Hexadecimal": "",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "Spanish - Dominican Republic",
+   "Language code": "es",
+   "LCID string": "es-do",
+   "LCID Decimal": "7178",
+   "LCID Hexadecimal": "",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "Spanish - Ecuador",
+   "Language code": "es",
+   "LCID string": "es-ec",
+   "LCID Decimal": "12298",
+   "LCID Hexadecimal": "",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "Spanish - El Salvador",
+   "Language code": "es",
+   "LCID string": "es-sv",
+   "LCID Decimal": "17418",
+   "LCID Hexadecimal": "",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "Spanish - Guatemala",
+   "Language code": "es",
+   "LCID string": "es-gt",
+   "LCID Decimal": "4106",
+   "LCID Hexadecimal": "",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "Spanish - Honduras",
+   "Language code": "es",
+   "LCID string": "es-hn",
+   "LCID Decimal": "18442",
+   "LCID Hexadecimal": "",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "Spanish - Mexico",
+   "Language code": "es",
+   "LCID string": "es-mx",
+   "LCID Decimal": "2058",
+   "LCID Hexadecimal": "",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "Spanish - Nicaragua",
+   "Language code": "es",
+   "LCID string": "es-ni",
+   "LCID Decimal": "19466",
+   "LCID Hexadecimal": "",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "Spanish - Panama",
+   "Language code": "es",
+   "LCID string": "es-pa",
+   "LCID Decimal": "6154",
+   "LCID Hexadecimal": "",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "Spanish - Paraguay",
+   "Language code": "es",
+   "LCID string": "es-py",
+   "LCID Decimal": "15370",
+   "LCID Hexadecimal": "",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "Spanish - Peru",
+   "Language code": "es",
+   "LCID string": "es-pe",
+   "LCID Decimal": "10250",
+   "LCID Hexadecimal": "",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "Spanish - Puerto Rico",
+   "Language code": "es",
+   "LCID string": "es-pr",
+   "LCID Decimal": "20490",
+   "LCID Hexadecimal": "",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "Spanish - Spain (Traditional)",
+   "Language code": "es",
+   "LCID string": "es-es",
+   "LCID Decimal": "1034",
+   "LCID Hexadecimal": "",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "Spanish - Uruguay",
+   "Language code": "es",
+   "LCID string": "es-uy",
+   "LCID Decimal": "14346",
+   "LCID Hexadecimal": "",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "Spanish - Venezuela",
+   "Language code": "es",
+   "LCID string": "es-ve",
+   "LCID Decimal": "8202",
+   "LCID Hexadecimal": "",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "Swahili",
+   "Language code": "sw",
+   "LCID string": "sw",
+   "LCID Decimal": "1089",
+   "LCID Hexadecimal": "441",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "Swedish - Finland",
+   "Language code": "sv",
+   "LCID string": "sv-fi",
+   "LCID Decimal": "2077",
+   "LCID Hexadecimal": "",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "Swedish - Sweden",
+   "Language code": "sv",
+   "LCID string": "sv-se",
+   "LCID Decimal": "1053",
+   "LCID Hexadecimal": "",
+   "Codepage": 1252
+ },
+ {
+   "Locale": "Syriac",
+   "Language code": "",
+   "LCID string": "",
+   "LCID Decimal": "1114",
+   "LCID Hexadecimal": "",
+   "Codepage": null
+ },
+ {
+   "Locale": "Tajik",
+   "Language code": "tg",
+   "LCID string": "tg",
+   "LCID Decimal": "1064",
+   "LCID Hexadecimal": "428",
+   "Codepage": null
+ },
+ {
+   "Locale": "Tamil",
+   "Language code": "ta",
+   "LCID string": "ta",
+   "LCID Decimal": "1097",
+   "LCID Hexadecimal": "449",
+   "Codepage": null
+ },
+ {
+   "Locale": "Tatar",
+   "Language code": "tt",
+   "LCID string": "tt",
+   "LCID Decimal": "1092",
+   "LCID Hexadecimal": "444",
+   "Codepage": 1251
+ },
+ {
+   "Locale": "Telugu",
+   "Language code": "te",
+   "LCID string": "te",
+   "LCID Decimal": "1098",
+   "LCID Hexadecimal": "",
+   "Codepage": null
+ },
+ {
+   "Locale": "Thai",
+   "Language code": "th",
+   "LCID string": "th",
+   "LCID Decimal": "1054",
+   "LCID Hexadecimal": "",
+   "Codepage": null
+ },
+ {
+   "Locale": "Tibetan",
+   "Language code": "bo",
+   "LCID string": "bo",
+   "LCID Decimal": "1105",
+   "LCID Hexadecimal": "451",
+   "Codepage": null
+ },
+ {
+   "Locale": "Tsonga",
+   "Language code": "ts",
+   "LCID string": "ts",
+   "LCID Decimal": "1073",
+   "LCID Hexadecimal": "431",
+   "Codepage": null
+ },
+ {
+   "Locale": "Turkish",
+   "Language code": "tr",
+   "LCID string": "tr",
+   "LCID Decimal": "1055",
+   "LCID Hexadecimal": "",
+   "Codepage": 1254
+ },
+ {
+   "Locale": "Turkmen",
+   "Language code": "tk",
+   "LCID string": "tk",
+   "LCID Decimal": "1090",
+   "LCID Hexadecimal": "442",
+   "Codepage": null
+ },
+ {
+   "Locale": "Ukrainian",
+   "Language code": "uk",
+   "LCID string": "uk",
+   "LCID Decimal": "1058",
+   "LCID Hexadecimal": "422",
+   "Codepage": 1251
+ },
+ {
+   "Locale": "Unicode",
+   "Language code": "",
+   "LCID string": "UTF-8",
+   "LCID Decimal": "0",
+   "LCID Hexadecimal": "",
+   "Codepage": null
+ },
+ {
+   "Locale": "Urdu",
+   "Language code": "ur",
+   "LCID string": "ur",
+   "LCID Decimal": "1056",
+   "LCID Hexadecimal": "420",
+   "Codepage": 1256
+ },
+ {
+   "Locale": "Uzbek - Cyrillic",
+   "Language code": "uz",
+   "LCID string": "uz-uz",
+   "LCID Decimal": "2115",
+   "LCID Hexadecimal": "843",
+   "Codepage": 1251
+ },
+ {
+   "Locale": "Uzbek - Latin",
+   "Language code": "uz",
+   "LCID string": "uz-uz",
+   "LCID Decimal": "1091",
+   "LCID Hexadecimal": "443",
+   "Codepage": 1254
+ },
+ {
+   "Locale": "Venda",
+   "Language code": "",
+   "LCID string": "",
+   "LCID Decimal": "1075",
+   "LCID Hexadecimal": "433",
+   "Codepage": null
+ },
+ {
+   "Locale": "Vietnamese",
+   "Language code": "vi",
+   "LCID string": "vi",
+   "LCID Decimal": "1066",
+   "LCID Hexadecimal": "",
+   "Codepage": 1258
+ },
+ {
+   "Locale": "Welsh",
+   "Language code": "cy",
+   "LCID string": "cy",
+   "LCID Decimal": "1106",
+   "LCID Hexadecimal": "452",
+   "Codepage": null
+ },
+ {
+   "Locale": "Xhosa",
+   "Language code": "xh",
+   "LCID string": "xh",
+   "LCID Decimal": "1076",
+   "LCID Hexadecimal": "434",
+   "Codepage": null
+ },
+ {
+   "Locale": "Yiddish",
+   "Language code": "yi",
+   "LCID string": "yi",
+   "LCID Decimal": "1085",
+   "LCID Hexadecimal": "",
+   "Codepage": null
+ },
+ {
+   "Locale": "Zulu",
+   "Language code": "zu",
+   "LCID string": "zu",
+   "LCID Decimal": "1077",
+   "LCID Hexadecimal": "435",
+   "Codepage": null
+ }
+]
