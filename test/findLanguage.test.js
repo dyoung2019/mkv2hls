@@ -4,8 +4,8 @@ describe('findLanguage test cases', () => {
   describe('sr-Cyrl-RS', () => {
     const actual = findLanguage('sr-Cyrl-RS')
 
-    test('name is Serbian [Cyrillic] .RS', () => {
-      expect(actual.name).toBe('Serbian [Cyrillic] .RS')
+    test('name is Serbian [Cyrl.] .RS', () => {
+      expect(actual.name).toBe('Serbian [Cyrl.] .RS')
     })
   })
 

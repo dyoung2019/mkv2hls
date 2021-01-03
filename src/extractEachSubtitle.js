@@ -61,13 +61,15 @@ function extractEachSubtitle(tempFolder, subtitleInfo) {
     .then(readPlaylistFile)
     .then(filterPlaylist)
     .then(output => {
-      const folderInfo = createSubtitleFolder(subtitlesPath, subtitleIndex, languageCode)
+      // const folderInfo = createSubtitleFolder(subtitlesPath, subtitleIndex, languageCode)
+      createFolderIfNeeded(absolutePath) 
       return {
         output, 
         folderInfo
       }
     })
     .then(({output, folderInfo}) => {
+      // WRITE SUB PLAYLIST 
       return writeSubtitlesOut(outputFolder, tempFolder, output, folderInfo)      
     })
 }

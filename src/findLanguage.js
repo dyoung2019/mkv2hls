@@ -5,7 +5,7 @@ const languages = require('./bcp47-languages.json')
 const regions = require('./bcp47-regions.json')
 const isoNativeNames = require('./iso639_2_natives.json')
 const isoIntNames = require('./iso639_2_ints.json')
-const scriptTypes = require('./bcp47-script_types.json')
+// const scriptTypes = require('./bcp47-script_types.json')
 const overrides = require('./overrides.json')
 
 function findLanguage(languageCode) {
@@ -46,9 +46,9 @@ function findLanguage(languageCode) {
     }
   }
 
-  const extractScriptTypeValue = key => {
-    return (key !== '') ? scriptTypes[key] : null
-  }
+  // const extractScriptTypeValue = key => {
+  //   return (key !== '') ? scriptTypes[key] : null
+  // }
 
   const getNativeLanguageName = (code, prefix) => {
     const isoValue = isoNativeNames[code] || isoNativeNames[prefix]
@@ -56,7 +56,7 @@ function findLanguage(languageCode) {
   }
 
   const formatScriptType = (value) => {
-    return !!value ? '[' + scriptTypes[value] + ']' : ''
+    return !!value ? '[' + value + '.]' : ''
   }
 
   const formatRegion = (value) => {
@@ -78,7 +78,7 @@ function findLanguage(languageCode) {
   const regionValue = extractRegionValue(regionKey)
 
   const scriptTypeKey = extractScriptTypeCode(parts)
-  const scriptTypeValue = extractScriptTypeValue(scriptTypeKey)
+  // const scriptTypeValue = extractScriptTypeValue(scriptTypeKey)
 
   const nativeLanguageName = getNativeLanguageName(languageCode, languageKey)
 
@@ -91,7 +91,7 @@ function findLanguage(languageCode) {
 // 1. use alternative description if found
   const fullDescription = 
     overrideDescription // ignore script
-    || !!scriptTypeValue && `${internationalLanguageName} ${scriptTypeFormatted} ${regionFormatted}` // plain text
+    || !!scriptTypeKey && `${internationalLanguageName} ${scriptTypeFormatted} ${regionFormatted}` // plain text
     || !!regionValue && `${languageFormatted} ${regionFormatted}` // code 
     || languageFormatted // found on iso 649
 
@@ -121,7 +121,7 @@ function findLanguage(languageCode) {
     regionValue,
     regionFormatted,
     scriptTypeKey,
-    scriptTypeValue,
+    // scriptTypeValue,
     scriptTypeFormatted
   }
 }
