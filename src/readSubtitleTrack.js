@@ -1,4 +1,5 @@
 const findLanguage = require('./findLanguage')
+const getPlaylistUri = require('./getPlaylistUri')
 const getTempPlaylistPath = require('./getTempPlaylistPath')
 const path = require('path')
 
@@ -30,19 +31,20 @@ const getSubFolder = (root, index, language) => {
   return path.join(root, suffix)
 }
 
-const generateURI = (subtitleFolder) => {
-  const uri = getTempPlaylistPath(subtitleFolder)
+const generateURI = (root, folder) => {
+  const absoluteUri = getTempPlaylistPath(folder)
+  const uri = getPlaylistUri(root, absoluteUri)
   return uri
 }
 
-function readSubtitleTrack(index, rootPath, trackInfo) {
+function readSubtitleTrack(index, outputFolder, subtitleRoot, trackInfo) {
   const language = getLanguage(trackInfo)
   const isForced = getIsForcedTrack(trackInfo)
   const name = generateSubtitleName(language, isForced) 
   const isDefault = getIsDefault(trackInfo)
   const isAutoSelect = getIsAutoSelect(trackInfo)
-  const subtitleFolder = getSubFolder(rootPath, index, language)
-  const uri = generateURI(subtitleFolder)
+  const subtitleFolder = getSubFolder(subtitleRoot, index, language)
+  const uri = generateURI(outputFolder, subtitleFolder)
 
   return {
     name,

@@ -2,21 +2,19 @@ const transferSegments = require('./transferSegments')
 const transferFile = require('./transferFile')
 const writeLinesToFile = require('./writeLinesToFile')
 const getTempPlaylistPath = require('./getTempPlaylistPath')
-const getPlaylistUri = require('./getPlaylistUri')
 
-function writeSubtitlesOut(outputFolder, srcFolder, output, folderInfo) {
-
-  // transfer files
-  const { relativePath, absolutePath } = folderInfo
+function writeSubtitlesOut(dstFolder, srcFolder, output) { 
   const { changes, finalCopy } = output
-  const finalSubtitleFile = getTempPlaylistPath(absolutePath)
-  return transferSegments(changes, srcFolder, absolutePath, transferFile)
+  const subtitleFile = getTempPlaylistPath(dstFolder)
+  return transferSegments(changes, srcFolder, dstFolder, transferFile)
     .then(() => {
-      return writeLinesToFile(finalSubtitleFile, finalCopy)
+      return writeLinesToFile(subtitleFile, finalCopy)
     })
     .then(() =>{
       return {
-        uri: getPlaylistUri(outputFolder, finalSubtitleFile)
+        // uri: getPlaylistUri(dstFolder, subtitleFile),
+        subtitleFolder: dstFolder,
+        subtitleFile
       }
     })
 }

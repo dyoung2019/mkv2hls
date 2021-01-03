@@ -1,27 +1,33 @@
 
-const createSubtitleFolder = require('./createSubtitleFolder')
+// const createSubtitleFolder = require('./createSubtitleFolder')
 const getTempPlaylistPath = require('./getTempPlaylistPath')
 const getTempVideoPath = require('./getTempVideoPath')
-
 const readPlaylistFile = require('./readPlaylistFile')
-
 const filterPlaylist = require('./filterPlaylist')
-
 const extractVideoAndSubs = require('./extractVideoAndSubs')
-
 const splitVideoBySubtitle = require('./splitVideoBySubtitle')
-
+const createSubtitleFolder = require('./createSubtitleFolder')
 const writeSubtitlesOut = require('./writeSubtitlesOut')
 
-function extractEachSubtitle(tempFolder, subtitleInfo) {
-  const  {
+function extractEachSubtitle(tempFolder, callbackInfo) {
+  const {
+    video: videoInfo,
+    track: subtitleInfo
+  } = callbackInfo
+
+  const {
     inputFile,
     outputFolder,
-    subtitlesPath,
     placeHolder,
-    audioTrack,
+  } = videoInfo
+
+  // CHOSE A DEFAULT TRACK
+  const audioTrack = 0
+  
+  const  {
+    subtitleFolder,
     subtitleIndex,
-    languageCode
+
   } = subtitleInfo
 
   const isolateSubToTemporaryVideo = () => {
@@ -40,7 +46,7 @@ function extractEachSubtitle(tempFolder, subtitleInfo) {
       })
   }
 
-  const extractSubFromTemporaryVideo = (videoFile) => {
+  const extractSubFromTemporaryVideo = videoFile => {
     const subPlaylistPath = getTempPlaylistPath(tempFolder)
 
     const extractionTask = {
@@ -56,22 +62,26 @@ function extractEachSubtitle(tempFolder, subtitleInfo) {
       })
   }
 
+  const resolveSubtitleFolder = output => {
+    const folderPath = createSubtitleFolder(outputFolder, subtitleFolder)
+    // console.log(folderPath)
+    return {
+      output, 
+      folderPath
+    }
+  }
+
+  const transferSubtitles = ({output, folderPath}) => {
+    // WRITE SUB PLAYLIST 
+    return writeSubtitlesOut(folderPath, tempFolder, output)      
+  }
+
   return isolateSubToTemporaryVideo()
     .then(extractSubFromTemporaryVideo)
     .then(readPlaylistFile)
     .then(filterPlaylist)
-    .then(output => {
-      // const folderInfo = createSubtitleFolder(subtitlesPath, subtitleIndex, languageCode)
-      createFolderIfNeeded(absolutePath) 
-      return {
-        output, 
-        folderInfo
-      }
-    })
-    .then(({output, folderInfo}) => {
-      // WRITE SUB PLAYLIST 
-      return writeSubtitlesOut(outputFolder, tempFolder, output, folderInfo)      
-    })
+    .then(resolveSubtitleFolder)
+    .then(transferSubtitles)
 }
 
 module.exports = extractEachSubtitle
