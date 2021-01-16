@@ -1,4 +1,4 @@
-function constructIntraFrameLine(entry) {
+function constructIframeLines(entry) {
   const {
     result,
     size,
@@ -7,10 +7,11 @@ function constructIntraFrameLine(entry) {
   } = entry
 
   return [
+    '',
     `#EXTINF:${result},`,
     `#EXT-X-BYTERANGE:${size}@${pos},`,
     file
   ]
 }
 
-module.exports = constructIntraFrameLine
+module.exports = constructIframeLines

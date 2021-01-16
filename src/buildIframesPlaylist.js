@@ -1,5 +1,6 @@
 const beginTag = require('./beginTag')
-const constructIntraFrameLine = require('./constructIntraFrameLine')
+const fetchIframes = require('./fetchIframes')
+const declareIframeEntries = require('./declareIframeEntries')
 
 const declareTargetDuration = (duration) => {
   return `#EXT-X-TARGETDURATION:${duration || 4}`
@@ -7,10 +8,6 @@ const declareTargetDuration = (duration) => {
 
 const declareVersion = (version) => {
   return `#EXT-X-VERSION:${version || 4}` 
-}
-
-const initialiseEntries = (noOfFrames) => {
-  return noOfFrames > 0 ? [''] : []
 }
 
 const declarePreamble = (jobParameters) => {
@@ -24,24 +21,14 @@ const declarePreamble = (jobParameters) => {
   ]
 }
 
-const declareEntries = (iframes) => {
-  const frameEntries = initialiseEntries(iframes.length)
-  iframes.forEach(iframe => {
-    frameEntries.concat(constructIntraFrameLine(iframe)) 
-  })
-  return iframes
-}
-
-const getIFrames = (videoInfo) => {
-  return (videoInfo && videoInfo.iframes) || []
-}
 
 function buildIntraFramePlaylist(jobParameters, videoInfo) {
   const preamble = declarePreamble(jobParameters)
 
-  const iframes = getIFrames(videoInfo)
-  const frameEntries = declareEntries(iframes)
+  const iframes = fetchIframes(videoInfo)
+  const frameEntries = declareIframeEntries(iframes)
 
+  // return ['a', 'b']
   return [...preamble, ...frameEntries]
 }
 

@@ -1,4 +1,4 @@
-const construct = require('../src/constructIntraFrameLine')
+const construct = require('../src/constructIframeLines')
 
 describe('construct intra frame line #1', () => {
 
@@ -14,17 +14,18 @@ describe('construct intra frame line #1', () => {
     expect(actual).toEqual(expect.any(Array))
   })   
 
-  test('result.length is 3', () => {
-    expect(actual).toHaveLength(3)
+  test('result.length is 4', () => {
+    expect(actual).toHaveLength(4)
   })    
 
   test('lines should be', () => {
     expect(actual).toEqual(
-        [
+      [
+        '',
         '#EXTINF:3.75,',
         '#EXT-X-BYTERANGE:999624@376,',
         'media_w1616510757_ko_0.ts'
-        ]
+      ]
     )
   })
 })

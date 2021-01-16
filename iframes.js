@@ -1,7 +1,7 @@
 const getIntraFrameData = require('./src/getIframes')
 const readPlaylistFile = require('./src/readPlaylistFile')
 const groupIntraFrames = require('./src/groupIframes')
-const splitIntoIframeChunks = require('./src/splitIntoIframeChunks')
+
 const path = require('path')
 
 const segmentFile = 'demo/720p_00011.ts'

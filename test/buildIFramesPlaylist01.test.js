@@ -1,4 +1,4 @@
-const build = require('../src/buildIntraFramePlaylist')
+const build = require('../src/buildIframesPlaylist')
 
 describe('buildIntraFramePlaylist #02 tests', () => {
   const jobParameters = {
