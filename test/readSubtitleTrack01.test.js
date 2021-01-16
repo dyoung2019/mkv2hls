@@ -3,6 +3,8 @@ const readTrack = require('../src/readSubtitleTrack')
 describe('read subtitle track from JSON #1', () => {
   const index = 1
 
+  const outputFolder = 'videos/'
+
   const subtitlePath = 'videos/subs/'
 
   const properties = {
@@ -17,7 +19,7 @@ describe('read subtitle track from JSON #1', () => {
     uid: 4
   }
 
-  const actual = readTrack(index, subtitlePath, properties)
+  const actual = readTrack(index, outputFolder, subtitlePath, properties)
   test('name is English', () => {
     expect(actual.name).toBe("English");
   })
@@ -38,8 +40,8 @@ describe('read subtitle track from JSON #1', () => {
     expect(actual.isForced).toBe(false)
   })   
 
-  test('uri is videos/subs/1_eng/subs_index.m3u8', () => {
-    expect(actual.uri).toBe('videos/subs/1_eng/subs_index.m3u8')
+  test('uri is subs/1_eng/subs_index.m3u8', () => {
+    expect(actual.uri).toBe('subs/1_eng/subs_index.m3u8')
   }) 
 
 

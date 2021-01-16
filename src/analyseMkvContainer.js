@@ -11,10 +11,13 @@ function analyseMkvContainer(inputFile, outputFolder) {
 
   return inspectMkvFile(inputFile)
     .then(data => {
+      const info = extractVideoInfo(data)
+
       return {
-        info: extractVideoInfo(data),
+        info,
         subtitles: extractSubtitleInfo(outputFolder, getSubtitleSubFolder(), data),
-        tracks: extractAudioTracks(data)
+        tracks: extractAudioTracks(data),
+        renditions: extractRenditions(info, data),
       }
     })
 }

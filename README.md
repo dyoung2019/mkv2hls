@@ -76,6 +76,8 @@ These files may be used to download the list of language codes with their langua
 - Subtitles, Captions, WebVTT, HLS, and those magic flags 
   - https://mux.com/blog/subtitles-captions-webvtt-hls-and-those-magic-flags/
 
+I-Frame (for scrubbing)
+ - https://www.wowza.com/docs/how-to-create-i-frame-only-playlists-for-apple-hls-streams
 
 - MKVToolNix – Matroska tools for Linux/Unix and Windows 
   - https://mkvtoolnix.download/
