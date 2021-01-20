@@ -1,5 +1,4 @@
 const beginTag = require('./beginTag')
-const fetchIframes = require('./fetchIframes')
 const declareIframeEntries = require('./declareIframeEntries')
 
 const declareTargetDuration = (duration) => {
@@ -22,14 +21,13 @@ const declarePreamble = (jobParameters) => {
 }
 
 
-function buildIntraFramePlaylist(jobParameters, videoInfo) {
+function buildIframePlaylist(jobParameters, iframes) {
   const preamble = declarePreamble(jobParameters)
 
-  const iframes = fetchIframes(videoInfo)
   const frameEntries = declareIframeEntries(iframes)
 
   // return ['a', 'b']
   return [...preamble, ...frameEntries]
 }
 
-module.exports = buildIntraFramePlaylist
+module.exports = buildIframePlaylist

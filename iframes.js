@@ -1,62 +1,23 @@
-const getIntraFrameData = require('./src/getIframes')
 const readPlaylistFile = require('./src/readPlaylistFile')
-const groupIntraFrames = require('./src/groupIframes')
-
-const path = require('path')
-
-const segmentFile = 'demo/720p_00011.ts'
-// return getIFrameData(segmentFile)
-//   .then(frames => {
-//     console.log('frames', frames)
-//   })
-
+const writeLinesToFile = require('./src/writeLinesToFile')
+const generateIframesPlaylist = require('./src/generateIframesPlaylist')
 
 const outputFolder = 'demo/'
-const playlistFile = 'demo/720p.m3u8'
+const inputFile = 'demo/720p.m3u8'
+const destinationPath = 'demo/720p_iframes.m3u8'
 
-const extendSegmentFiles = (outputFolder, lines) => {
-  return lines
-    .filter(line => line.endsWith('.ts'))
-    .map(file => {
-      return {
-        relativePath: file,
-        absolutePath: path.resolve(outputFolder, file)
-      }
-    })
+const playlistParams = {
+  duration:4,
+  version: 4
 }
 
-readPlaylistFile(playlistFile)
+readPlaylistFile(inputFile)
+  .then(text => {
+    return generateIframesPlaylist(playlistParams, outputFolder, text)
+  })
   .then(lines => {
-    return extendSegmentFiles(outputFolder, lines)
+    return writeLinesToFile(destinationPath, lines)
   })
-  .then(segments => {
-    const collection = segments
-
-    const entries = collection.map(segment => {
-      return getIntraFrameData(segment.absolutePath)
-        .then(frames => {
-          return {
-            frames: [...frames],
-            file: segment.relativePath,
-          }
-        })
-    })
-
-    return Promise.all(entries)
+  .then(() => {
+    console.log('WRITE OUT')
   })
-  .then(files => {
-    // console.log(files[0].frames[0])
-    const entries = groupIntraFrames(files)
-
-    // const lastGroupIndex = files.length - 1
-    // const lastFrameIndex = files[lastGroupIndex].frames.length - 1
-
-    console.log(entries)
-    // // return times
-  })
-//   .then(() => {
-//     return getIFrameData(segmentFile)
-//   })
-//   .then(data => {
-//     console.log('frames', JSON.stringify(data, null, '\t'))
-//   })

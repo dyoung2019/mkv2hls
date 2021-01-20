@@ -6,11 +6,9 @@ describe('buildIntraFramePlaylist #02 tests', () => {
     duration: 6
   }
 
-  const videoInfo = {
-    iframes: []
-  }
+  const iframes = []
 
-  const actual = build(jobParameters, videoInfo)
+  const actual = build(jobParameters, iframes)
   test('just preamble list (4 lines)', () => {
     expect(actual).toHaveLength(4)
   })

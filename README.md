@@ -87,3 +87,6 @@ I-Frame (for scrubbing)
 
 - HLS authoring rules for Apple Devices
   - https://developer.apple.com/documentation/http_live_streaming/hls_authoring_specification_for_apple_devices
+
+- What bitrate for HLS adaptive streaming video?
+ - https://www.miracletutorials.com/bitrate-hls-video/
