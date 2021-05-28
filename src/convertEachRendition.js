@@ -13,6 +13,7 @@ function convertEachRendition(jobParams, renditionInfo) {
     containerHeight,
     videoBitrate,
     audioBitrate,
+    playlistFilePath
   } = renditionInfo
 
   const commands = [
@@ -37,14 +38,15 @@ function convertEachRendition(jobParams, renditionInfo) {
     '-map 0:a',
     // '-map 0:s:0',
     // OUTPUT 
-    `${outputFolder}/${prefix}.m3u8`
+    playlistFilePath
+    // `${outputFolder}/${prefix}.m3u8`
   ]
 
   // map all audio streams
   return ffmpeg.run(commands.join(' '))
-    .then(() => {
-      console.log(prefix)
-    })
+    // .then(() => {
+    //   console.log(prefix)
+    // })
 }
 
 module.exports = convertEachRendition

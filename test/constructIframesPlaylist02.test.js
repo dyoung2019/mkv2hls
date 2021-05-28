@@ -1,4 +1,4 @@
-const build = require('../src/buildIframesPlaylist')
+const constructIframesPlaylist = require('../src/constructIframesPlaylist')
 
 describe('buildIntraFramePlaylist #02 tests', () => {
   const jobParameters = {
@@ -16,7 +16,7 @@ describe('buildIntraFramePlaylist #02 tests', () => {
     ]
 
 
-  const actual = build(jobParameters, iframes)
+  const actual = constructIframesPlaylist(jobParameters, iframes)
   test('one iframe (8 lines)', () => {
     expect(actual).toHaveLength(8)
   })

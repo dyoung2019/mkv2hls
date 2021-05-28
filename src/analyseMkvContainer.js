@@ -3,6 +3,7 @@ const extractVideoInfo = require('./extractVideoInfo')
 const extractSubtitleInfo = require('./extractSubtitlesInfo')
 const extractAudioTracks = require('./extractAudioTracks')
 const resolveFolderPath = require('./resolveFolderPath')
+const extractRenditions = require('./extractRenditions')
 
 function analyseMkvContainer(inputFile, outputFolder) {
   const getSubtitleSubFolder = () => {
@@ -17,7 +18,7 @@ function analyseMkvContainer(inputFile, outputFolder) {
         info,
         subtitles: extractSubtitleInfo(outputFolder, getSubtitleSubFolder(), data),
         tracks: extractAudioTracks(data),
-        renditions: extractRenditions(info, data),
+        renditions: extractRenditions(info, outputFolder),
       }
     })
 }

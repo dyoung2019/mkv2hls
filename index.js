@@ -7,6 +7,8 @@ const extractAllSubtitles = require('./src/extractAllSubtitles')
 const renditions = require('./src/renditions')
 const buildPlaylist = require('./src/buildPlaylist')
 const convertEachRendition = require('./src/convertEachRendition')
+const generateIframesBasedOnPlaylist = require('./src/generateIframesBasedOnPlaylist')
+const convertAllRenditions = require('./src/convertAllRenditions')
 
 const argv = prepareArguments(process.argv.slice(2))
 
@@ -26,6 +28,8 @@ const jobParams = {
   // videoBitrate: currentRendition.videoBitrate,
   // audioBitrate: currentRendition.audioBitrate,
   // subtitleIndex: 1,
+  duration: 4,
+  version: 3,
 }
 
 // let videoInfo = null
@@ -34,22 +38,14 @@ analyseMkvContainer(inputFile, outputFolder)
   //   return extractAllSubtitles(jobParams, videoInfo)
   // })
   .then(videoInfo => {
-    const renditionInfo = {
-      prefix: currentRendition.prefix,
-      containerWidth: currentRendition.containerWidth,
-      containerHeight: currentRendition.containerHeight,
-      videoBitrate: currentRendition.videoBitrate,
-      audioBitrate: currentRendition.audioBitrate,  
-    }
-
-    return convertEachRendition(jobParams, renditionInfo)
+    return convertAllRenditions(videoInfo.renditions, jobParams, outputFolder)
       .then(() => {
         return videoInfo
       })
   })
   // Write master playlist
   .then((videoInfo) => {
-    console.log(videoInfo.subtitles)
+    // console.log(videoInfo.subtitles)
     console.log('writing master playlist')
     const entries = buildPlaylist(videoInfo)
     console.log(entries)

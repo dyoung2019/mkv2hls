@@ -1,5 +1,6 @@
-const begin = require('../src/beginTag')
+const beginTag = require('../src/beginTag')
 const constructAudioLine = require('./constructAudioLine')
+const constructSubtitleLine = require('./constructSubtitleLine')
 
 const isGapRequired = (noOfAudioTracks) => {
   return (noOfAudioTracks > 0)
@@ -7,6 +8,7 @@ const isGapRequired = (noOfAudioTracks) => {
 
 function buildPlaylist(videoInfo) {
   const tracks = (videoInfo && videoInfo.tracks) || []
+  const subtitles = (videoInfo && videoInfo.subtitles) || []
 
   const noOfAudioTracks = tracks.length
 
@@ -15,7 +17,9 @@ function buildPlaylist(videoInfo) {
 
   const audioEntries = [ ...firstLinebreak, ...audioDescriptions]
 
-  return [begin(),  ...audioEntries]
+  const subtitleLines = subtitles.map(constructSubtitleLine)
+
+  return [beginTag(),  ...audioEntries, ...subtitleLines]
 }
 
 module.exports = buildPlaylist

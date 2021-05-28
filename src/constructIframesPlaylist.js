@@ -21,7 +21,7 @@ const declarePreamble = (jobParameters) => {
 }
 
 
-function buildIframePlaylist(jobParameters, iframes) {
+function constructIframesPlaylist(jobParameters, iframes) {
   const preamble = declarePreamble(jobParameters)
 
   const frameEntries = declareIframeEntries(iframes)
@@ -30,4 +30,4 @@ function buildIframePlaylist(jobParameters, iframes) {
   return [...preamble, ...frameEntries]
 }
 
-module.exports = buildIframePlaylist
+module.exports = constructIframesPlaylist
