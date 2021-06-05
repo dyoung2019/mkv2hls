@@ -1,0 +1,17 @@
+{
+  "extends": "./tsconfig-base.json",
+  "include": [
+    "src"
+  ],  
+  "compilerOptions": {
+    "stripInternal": true,
+    "target": "esnext",
+    "module": "esnext",
+    "outDir": "./lib",
+    "declarationDir": "./types",
+    "declaration": true,
+    /* noEmit - We only use TypeScript for type checking. */
+    "noEmit": false,
+    "esModuleInterop": true,
+  }
+}

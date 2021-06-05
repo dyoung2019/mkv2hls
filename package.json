@@ -1,14 +1,38 @@
 {
   "name": "mkv2hls",
   "version": "1.0.1",
-  "description": "converts file1.mkv into hls video parts",
-  "main": "index.js",
-  "bin": {
-    "mkv2hls": "index.js"
+  "exports": {
+    ".": "./dist/index.js",
+    "./es6": "./lib/index.js"
   },
+  "typesVersions": {
+    "*": {
+      ".": [
+        "./types/index.d.ts"
+      ],
+      "es6": [
+        "./types/index.d.ts"
+      ]
+    }
+  },
+  "description": "converts file1.mkv into hls video parts",
+  "files": [
+    "dist/*",
+    "lib/**",
+    "types/*"
+  ],
   "scripts": {
-    "test": "jest",
-    "dev": "serve demo"
+    "build": "npm run build:es6 && npm run build:cjs && npm run deploy:cjs",
+    "build:es6": "tsc -p tsconfig-mjs.json && node ./deploy/copy-mjs.js",
+    "build:cjs": "tsc -p tsconfig-cjs.json && webpack",
+    "test":"npm run test:es6",
+    "test:cjs": "jest",
+    "test:es6":"node --experimental-vm-modules node_modules/.bin/jest",
+    "dev": "serve demo",
+    "clean": "npm run clean:es6 && npm run clean:lib",
+    "clean:lib": "node ./deploy/delete-lib.js",
+    "clean:es6": "tsc --build --clean tsconfig-mjs.json",
+    "clean:cjs": "tsc --build --clean tsconfig-cjs.json"
   },
   "keywords": [
     "mkv",
@@ -18,13 +42,25 @@
   "author": "David Young",
   "license": "ISC",
   "devDependencies": {
+    "@types/glob": "^7.1.3",
+    "@types/jest": "^26.0.22",
+    "@types/node": "^14.14.37",
     "axios": "^0.21.0",
+    "del": "^6.0.0",
+    "glob": "^7.1.7",
     "jest": "^26.6.3",
     "memfs": "^3.2.0",
-    "serve": "^11.3.2"
+    "prettier": "^2.2.1",
+    "serve": "^11.3.2",
+    "ts-jest": "^26.5.6",
+    "ts-loader": "^8.3.0",
+    "typescript": "^4.3.2",
+    "uglify-js": "^3.13.4",
+    "uglifyjs-folder": "^2.0.0",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.0"
   },
   "dependencies": {
-    "del": "^6.0.0",
     "ffmpeg-cli": "^2.7.1",
     "yargs": "^16.1.0"
   }

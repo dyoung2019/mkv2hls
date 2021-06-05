@@ -1,0 +1,26 @@
+{
+  "extends": "./tsconfig-base.json",
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "./node_modules/*",
+    "./build/*",
+    "./dist/*",
+    "./lib/**/*",
+    "./lib/*",
+    "./types/**",
+    "./specs/**"
+  ],
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "target": "ES2017",
+    "module": "CommonJs",
+    "outDir": "./build",
+    // "rootDir": "./src",
+    "strict": true,
+    "alwaysStrict": true,
+    // "strict": true,
+    "esModuleInterop": true
+  }
+}

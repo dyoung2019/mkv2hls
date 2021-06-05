@@ -124,4 +124,9 @@ test5/*
 *.m3u8
 *.vtt
 trash/*
+# simple build
 ffhelp.txt
+subtitles.txt
+build/*
+lib/*
+demo/*
