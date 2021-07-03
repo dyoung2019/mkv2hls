@@ -22,7 +22,7 @@
     "types/*"
   ],
   "scripts": {
-    "build": "npm run build:es6 && npm run build:cjs && npm run deploy:cjs",
+    "build": "npm run build:es6 && npm run build:cjs",
     "build:es6": "tsc -p tsconfig-mjs.json && node ./deploy/copy-mjs.js",
     "build:cjs": "tsc -p tsconfig-cjs.json && webpack",
     "test":"npm run test:es6",

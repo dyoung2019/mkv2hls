@@ -90,3 +90,11 @@ I-Frame (for scrubbing)
 
 - What bitrate for HLS adaptive streaming video?
  - https://www.miracletutorials.com/bitrate-hls-video/
+
+Peak bitrate
+- https://www.ramugedia.com/hls--how-determine-peak-bitrate
+
+hls codec values
+https://developer.apple.com/documentation/http_live_streaming/hls_authoring_specification_for_apple_devices/hls_authoring_specification_for_apple_devices_appendixes#3151786
+
+https://doc-kurento.readthedocs.io/en/latest/knowledge/h264.html#profiles-and-levels

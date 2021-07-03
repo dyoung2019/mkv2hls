@@ -2,10 +2,10 @@
 const prepareArguments = require('./src/prepareArguments')
 const prepareOutputFolder = require('./src/prepareOutputFolder')
 const analyseMkvContainer = require('./src/analyseMkvContainer')
-const extractAllSubtitles = require('./src/extractAllSubtitles')
+const extractAllSubtitles = require('../src/extractAllSubtitles')
 
 const renditions = require('./src/renditions')
-const buildPlaylist = require('./src/buildPlaylist')
+const buildPlaylist = require('../src/buildPlaylist')
 const convertEachRendition = require('./src/convertEachRendition')
 const generateIframesBasedOnPlaylist = require('./src/generateIframesBasedOnPlaylist')
 const convertAllRenditions = require('./src/convertAllRenditions')
