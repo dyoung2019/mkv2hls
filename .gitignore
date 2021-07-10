@@ -120,7 +120,6 @@ beach/*
 test5/*
 *.mkv
 */index.html
-*.ts
 *.m3u8
 *.vtt
 trash/*
@@ -130,3 +129,4 @@ subtitles.txt
 build/*
 lib/*
 demo/*
+types/*

@@ -1,0 +1,1 @@
+export type FFProbeOutput = [type: string, props: any];

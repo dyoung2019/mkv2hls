@@ -1,0 +1,3 @@
+interface FormatStream {
+  duration: string;
+}
