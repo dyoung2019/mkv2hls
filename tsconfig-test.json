@@ -1,11 +1,22 @@
 {
   "extends": "./tsconfig-base.json",
+  "exclude": [
+    "./node_modules/*",
+    "./build/*",
+    "./dist/*",
+    "./lib/**/*",
+    "./lib/*",
+    "./types/*",
+    "./demo/*",
+    "./test/*"
+  ],
   "compilerOptions": {
     "module": "esnext",
-    "target": "esnext",
-    "outDir": "./dist/",
-    "declarationDir": "./dist/types",
+    "target": "esnext", 
+    "outDir": "./build/",
+    "declarationDir": "./build/types",
     "declaration": true,
     "types": ["node", "jest"],
+    "esModuleInterop": true,
   }
 }
