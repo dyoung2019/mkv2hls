@@ -9,7 +9,7 @@ export default function constructAudioLine(resolveURI: ResolveURIFn, params: Aud
 
   return `#EXT-X-MEDIA:TYPE=AUDIO,` +
     `GROUP-ID="audio"` +
-    formatAudioLanguage(params.languageCode, params.languageDescription) +
+    formatAudioLanguage(params.languageCode) +
     formatAudioTitle(params.title) +
     `,AUTOSELECT=${params.isForced ? 'YES' : 'NO'}` +
     `,DEFAULT=${params.isDefault ? 'YES' : 'NO'}` +

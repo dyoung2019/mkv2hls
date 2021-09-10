@@ -6,7 +6,7 @@ import extractRenditions from './extractRenditions/index.js';
 import type { FFProbeOutput } from './FFProbeOutput.js';
 import type { ConversionTask } from './ConversionTask.js';
 
-export default function analyse(
+export default function analyseVideo(
   outputs: FFProbeOutput[]
 ): ConversionTask {
 

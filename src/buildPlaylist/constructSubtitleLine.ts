@@ -1,11 +1,12 @@
 import generateURI from "../generateURI/index.js";
 import type { ResolveURIFn } from "../ResolveURI.js";
 import type { SubtitleTrack } from "../SubtitleTrack"
+import generateSubtitleName from "./generateSubtitleName.js";
 import getYesOrNo from "./getYesOrNo.js";
 
 export default function constructSubtitleLine(resolveURI: ResolveURIFn, entry: SubtitleTrack): string {
   const {
-    name,
+    // name,
     isDefault,
     isAutoSelect,
     isForced,
@@ -13,6 +14,7 @@ export default function constructSubtitleLine(resolveURI: ResolveURIFn, entry: S
     subtitlePlaylistURI
   } = entry
 
+  const name = generateSubtitleName(language, isForced) 
   const uri = generateURI(resolveURI, subtitlePlaylistURI);
   const GROUP_ID = "subs"
 

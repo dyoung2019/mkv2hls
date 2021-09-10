@@ -4,4 +4,5 @@ export interface ConversionConfiguration {
   segmentLength: number;
   minFrameInterval: number;
   overwriteFiles: boolean;
+  segmentNumberFormat: string;
 }

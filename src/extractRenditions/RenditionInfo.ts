@@ -4,4 +4,6 @@ interface RenditionInfo {
   containerHeight: number;
   videoBitrate: string;
   audioBitrate: string;
+  bufSize: string;
+  maxRate: string;
 }

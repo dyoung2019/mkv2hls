@@ -1,6 +1,6 @@
-export default function formatAudioLanguage(languageCode: string|null, languageDescription: string|null) {
+export default function formatAudioLanguage(languageCode: string|null) {
   if (!!languageCode) {
-    return `,LANGUAGE="${languageDescription}"`;
+    return `,LANGUAGE="${languageCode}"`;
   } else {
     return '';
   }
